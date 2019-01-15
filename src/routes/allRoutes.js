@@ -7,58 +7,22 @@ import CaseStudiesPage from '../pages/CaseStudiesPage'
 import NotFoundPage from '../pages/NotFoundPage'
 import BlockchainPage from '../pages/BlockchainPage';
 
-
-
-/* 
-    A config object with all routes within the website
-    route object: {
-        pageTitle: "page title (displayed on the browser tab)",
-        path: --page-url--,
-        exact: true (should remain true for static pages), 
-        page: (the component page to be displayed for the above path)
-    }
-*/
-
+/* A config object with all routes within the website */
 export default [
-    {
-        pageTitle: "Home",
-        path: "/",
-        exact: true,
-        page: HomePage
-    },
-    {
-        pageTitle: "Meet the team",
-        path: "/team",
-        exact: true,
-        page: TeamPage
-    },
-    {
-        pageTitle: "Latest news",
-        path: "/news",
-        exact: true,
-        page: NewsPage
-    },
-    {
-        pageTitle: "Contact us",
-        path: "/contacts",
-        exact: true,
-        page: ContactsPage
-    },
-    {
-        pageTitle: "Blockchain Infrastructure",
-        path: "/blockchain",
-        exact: true,
-        page: BlockchainPage
-    },
-    {
-        pageTitle: "Case Studies",
-        path: "/case-studies",
-        exact: true,
-        page: CaseStudiesPage
-    },
-    ...projectsRoutes, //project paths come from projectRoutes.js
-    { //the not found page MUST always be last
-        pageTitle: "Not found",
+    { path: "/", page: HomePage },
+    { path: "/team", page: TeamPage },
+    { path: "/news", page: NewsPage },
+    { path: "/contacts", page: ContactsPage },
+    { path: "/blockchain", page: BlockchainPage },
+    { path: "/case-studies", page: CaseStudiesPage },
+
+    /*  project paths come from projectRoutes.js 
+        just for separation of concerns
+    */
+    ...projectsRoutes, 
+
+    /* the 404 page MUST always be listed last with exact: false */
+    { 
         path: "*",
         exact: false,
         page: NotFoundPage

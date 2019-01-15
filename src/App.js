@@ -13,7 +13,7 @@ class App extends Component {
             allRoutes.map(route => (
               <Route
                 key={route.path}
-                exact={route.exact}
+                exact={route.exact || true}
                 path={route.path}
                 component={route.page}
               />

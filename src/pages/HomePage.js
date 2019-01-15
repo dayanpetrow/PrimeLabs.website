@@ -7,9 +7,16 @@ import {
     HomeReviews,
     HomePartners
 } from '../components/UI/HomePage'
+import { Helmet } from "react-helmet";
+
+const PAGE_TITLE = "home custom title";
 
 export const HomePage = () => (
     <div>
+        <Helmet>
+            <title>{PAGE_TITLE}</title>
+        </Helmet>
+
         <HomeHeader />
         <HomeServicesSection />
         <HomeNewsletter />
