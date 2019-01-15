@@ -1,6 +1,13 @@
-import React from 'react';
-import HomePage from '../pages/HomePage';
 import projectsRoutes from './projectsRoutes';
+import HomePage from '../pages/HomePage';
+import NewsPage from '../pages/NewsPage';
+import TeamPage from '../pages/TeamPage';
+import ContactsPage from '../pages/ContactsPage';
+import CaseStudiesPage from '../pages/CaseStudiesPage'
+import NotFoundPage from '../pages/NotFoundPage'
+import BlockchainPage from '../pages/BlockchainPage';
+
+
 
 /* 
     A config object with all routes within the website
@@ -19,11 +26,41 @@ export default [
         exact: true,
         page: HomePage
     },
+    {
+        pageTitle: "Meet the team",
+        path: "/team",
+        exact: true,
+        page: TeamPage
+    },
+    {
+        pageTitle: "Latest news",
+        path: "/news",
+        exact: true,
+        page: NewsPage
+    },
+    {
+        pageTitle: "Contact us",
+        path: "/contacts",
+        exact: true,
+        page: ContactsPage
+    },
+    {
+        pageTitle: "Blockchain Infrastructure",
+        path: "/blockchain",
+        exact: true,
+        page: BlockchainPage
+    },
+    {
+        pageTitle: "Case Studies",
+        path: "/case-studies",
+        exact: true,
+        page: CaseStudiesPage
+    },
     ...projectsRoutes, //project paths come from projectRoutes.js
     { //the not found page MUST always be last
         pageTitle: "Not found",
         path: "*",
         exact: false,
-        page: () => (<div><h1>Page not found</h1></div>)
+        page: NotFoundPage
     },
 ]

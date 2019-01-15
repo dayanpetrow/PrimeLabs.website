@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyledHomeFaqWrapper } from './styledHomeFAQ'
-import SectionTitle from '../../common/SectionTitle';
+import { SectionTitle } from '../../common/';
 
 /*  
     #TODO:

@@ -1,5 +1,6 @@
 import React from 'react';
 import { HomeHeaderWrapper } from './styledHomeHeader';
+import { Navigation } from '../../common/'
 
 /*  
     #TODO:
@@ -9,7 +10,7 @@ import { HomeHeaderWrapper } from './styledHomeHeader';
 const HomeHeader = () => (
     <HomeHeaderWrapper>
         <div className="HomeHeader__content-wrapper">
-            <div className="navigation-placeholder">navigation placeholder</div>
+            <Navigation />
             <div className="HomeHeader__title">
                 Blockchain Development & Consulting
             </div>

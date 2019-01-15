@@ -45,12 +45,4 @@ export const HomeHeaderWrapper = styled.div`
             color: #1f1f1f;
         }
     }
-    .navigation-placeholder {
-        width: 100%;
-        height: 45px;
-        background-color: orange;
-        text-align: center;
-        color: white;
-        line-height: 45px;
-    }
 `

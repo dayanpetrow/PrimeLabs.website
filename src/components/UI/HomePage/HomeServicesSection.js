@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionTitle from '../../common/SectionTitle';
+import { SectionTitle } from '../../common/';
 import { StyledHomeServicesWrapper } from './styledHomeServicesSection'
 import Separator from '../../../images/home_services/separator.svg'
 import WhiteLabelImage from '../../../images/home_services/transaction.svg'
