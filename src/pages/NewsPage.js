@@ -1,17 +1,41 @@
 import React from 'react';
-import { Navigation, SectionTitle } from '../components/common'
+import { Navigation } from '../components/common'
 import { Helmet } from "react-helmet";
+import NewsPageContent from '../components/UI/NewsPage'
+import dummyNews from '../components/UI/NewsPage/dummyNews';
 
 const PAGE_TITLE = "news custom title";
 
-const NewsPage = () => (
-    <div>
-        <Helmet>
-            <title>{PAGE_TITLE}</title>
-        </Helmet>
-        <Navigation />
-        <SectionTitle shadowText={"Latest nes"} mainText={"News"} />
-    </div>
-)
+class NewsPage extends React.Component {
+    state = {
+        newsCount: 4,
+        news: []
+    }
+
+    componentWillMount() {
+        this.setState(() => {
+            return { news: [...dummyNews] }
+        });
+    }
+
+    loadMore = () => {
+        this.setState((prevState) => {
+            return { newsCount: prevState.newsCount + 4 };
+        });
+    }
+
+    render() {
+        const { news, newsCount } = this.state;
+        return (
+            <div>
+                <Helmet>
+                    <title>{PAGE_TITLE}</title>
+                </Helmet>
+                <Navigation />
+                <NewsPageContent news={news} loadMore={this.loadMore} newsCount={newsCount} />
+            </div>
+        )
+    }
+}
 
 export default NewsPage;
