@@ -7,7 +7,7 @@ export const StyledHomePartnersWrapper = styled.div`
     margin: 50px 0;
     .HomePartners__content-wrapper {
         width: 100%;
-        max-width: 1440px;
+        max-width: 1280px;
         margin: 0px auto;
         display: flex;
         min-height: 153px;

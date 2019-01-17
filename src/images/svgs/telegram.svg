@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="27px" viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>1B07B363-255D-4EE5-AADF-C651A8F56574</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M4.31339236,13.4610721 L8.40171674,14.9980316 L9.98414893,20.1240296 C10.0854019,20.4523313 10.4839671,20.5736796 10.7485141,20.3558245 L13.0274151,18.4845466 C13.266294,18.2884949 13.6065441,18.2787251 13.8561871,18.4612539 L17.9665127,21.467082 C18.2495123,21.6742736 18.6504432,21.5180756 18.7214149,21.1736299 L21.7324482,6.58496577 C21.8099256,6.20870857 21.4428836,5.89482332 21.0871972,6.03338796 L4.30860177,12.553015 C3.89454108,12.7138596 3.89814881,13.304338 4.31339236,13.4610721 Z M9.72912398,14.1798687 L17.7192355,9.22305538 C17.8628349,9.13423343 18.0105743,9.32980854 17.887261,9.44502092 L11.2931035,15.6190704 C11.0613218,15.8363893 10.9118081,16.1272202 10.8694617,16.4428926 L10.6448362,18.1196081 C10.6150873,18.34348 10.302871,18.3657003 10.2415396,18.1490367 L9.37763667,15.0915001 C9.2786903,14.7427652 9.42288112,14.3702611 9.72912398,14.1798687 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Navigator" transform="translate(-1805.000000, -197.000000)"></g>
+        <g id="Social/Telegram">
+            <rect fill="#CCCCCC" x="0" y="0" width="27" height="27"></rect>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <g id="Button/Default/Color/White" mask="url(#mask-2)" fill="#FFFFFF">
+                <rect id="Color" x="0" y="0" width="27" height="27"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -5,7 +5,6 @@ import { Footer } from './components/common/'
 
 class App extends Component {
   render() {
-    console.log(window.innerWidth, window.innerHeight);
     return (
       <div className="App">
         <Switch>

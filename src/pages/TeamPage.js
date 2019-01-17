@@ -1,6 +1,7 @@
 import React from 'react';
-import { Navigation, SectionTitle } from '../components/common'
+import { Navigation } from '../components/common'
 import { Helmet } from "react-helmet";
+import TeamPageContent from '../components/UI/TeamPage'
 
 const PAGE_TITLE = "team custom title";
 
@@ -10,7 +11,7 @@ const TeamPage = () => (
             <title>{PAGE_TITLE}</title>
         </Helmet>
         <Navigation />
-        <SectionTitle shadowText={"Meet the team"} mainText={"Team"} />
+        <TeamPageContent />
     </div>
 )
 

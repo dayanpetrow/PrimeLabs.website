@@ -27,3 +27,5 @@ export const HomePage = () => (
 )
 
 export default HomePage;
+
+/* console.log(window.innerWidth, window.innerHeight); */

@@ -4,16 +4,15 @@ import HeaderCover from '../../../images/home_header/bg@3x.jpg'
 export const HomeHeaderWrapper = styled.div`
     height: 80vh;
     max-height: 763px;
-    min-height: 450px;
+    min-height: 480px;
     width: 100%;
     background-image: url(${HeaderCover});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    padding-top: 27px;
     .HomeHeader__content-wrapper {
         width: 100%;
-        max-width: 1440px;
+        max-width: 1280px;
         margin: 0px auto;
         .HomeHeader__title {
             margin: 0 auto;
