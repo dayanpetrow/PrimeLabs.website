@@ -2,11 +2,10 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { StyledFooter } from './styledFooter'
 import PrimeLabsLogo from '../../../images/svgs/PrimeLabsLogo.svg'
-/*
 import Linkedin from '../../../images/svgs/linked-in.svg'
 import Telegram from '../../../images/svgs/telegram.svg'
-import ScrollUp from '../../../images/svgs/up-blue.svg'
-*/
+import ScrollUp from '../../../images/svgs/scrollup.svg'
+
 
 const Footer = () => (
     <StyledFooter>
@@ -38,7 +37,11 @@ const Footer = () => (
                     </ul>
                 </div>
                 <div className="Footer__flex-grid__icons">
-                    placeholder icons
+                    <a href="http://google.com">
+                        <img src={Linkedin} alt="PrimeLabs Logo" className="Footer__flex-grid__icons--small" />
+                    </a>
+                    <img src={Telegram} alt="PrimeLabs Logo" className="Footer__flex-grid__icons--small" />
+                    <img src={ScrollUp} alt="PrimeLabs Logo" className="Footer__flex-grid__icons--scrollup" />
                 </div>
             </div>
             <hr className="Footer__separator" />

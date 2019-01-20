@@ -67,6 +67,18 @@ export const StyledTeamGrid = styled.div`
             text-align: center;
             color: #1f1f1f;
             padding-bottom: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .TeamGrid__item__Linkedin {
+                margin-left: 5px;
+                transform: translateY(3px);
+                a >
+                    > img {
+                        height: 18px;
+                        width: 18px;
+                    }
+            }
         }
         &__separator {
             width: 39px;

@@ -4,6 +4,7 @@ import { StyledHomeServicesWrapper } from './styledHomeServicesSection'
 import Separator from '../../../images/home_services/separator.svg'
 import WhiteLabelImage from '../../../images/home_services/transaction.svg'
 import BlockchainDevelopment from '../../../images/home_services/bitcoin.svg'
+import ICO from '../../../images/home_services/ico.svg'
 
 /*  
     #TODO:
@@ -62,8 +63,8 @@ const HomeServicesSection = () => (
             </div>
 
             <div className="HomeServices__flex-grid__column" tabIndex="1">
-                <div className="HomeServices__image--blockchain">
-                    <img src={BlockchainDevelopment} alt="White-Label Exchange" />
+                <div className="HomeServices__image--ico">
+                    <img src={ICO} alt="White-Label Exchange" />
                 </div>
                 <div className="HomeServices__title-wrapper">
                     <div className="HomeServices__title">

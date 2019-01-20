@@ -57,9 +57,19 @@ export const StyledFooter = styled.div`
                 }
             }
             &__icons {
-                max-width: 115px;
+                max-width: 200px;
                 align-items: right;
-                background-color: orange;
+                &--small {
+                    width: 23px;
+                    height: 23px;
+                    padding: 11px 5px;
+                }
+                &--scrollup {
+                    width: 45px;
+                    height: 45px;
+                    padding: 0px 23px;
+                    margin-right: 10px;
+                }
             }
         }
         .Footer__separator {

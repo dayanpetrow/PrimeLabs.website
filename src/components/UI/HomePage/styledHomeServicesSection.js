@@ -35,7 +35,7 @@ export const StyledHomeServicesWrapper = styled.div`
                 &--white-label {
                     width: 100%;
                     position: absolute;
-                    top: 72px;
+                    top: 56px;
                     > img {
                         margin: 0px auto;
                     }
@@ -43,7 +43,15 @@ export const StyledHomeServicesWrapper = styled.div`
                 &--blockchain {
                     width: 100%;
                     position: absolute;
-                    top: 67px;
+                    top: 51px;
+                    > img {
+                        margin: 0px auto;
+                    }
+                }
+                &--ico {
+                    width: 100%;
+                    position: absolute;
+                    top: 25px;
                     > img {
                         margin: 0px auto;
                     }
@@ -51,7 +59,7 @@ export const StyledHomeServicesWrapper = styled.div`
             }
             .HomeServices__title-wrapper {
                 position: absolute;
-                top: 152px;
+                top: 155px;
                 width: 100%;
                 .HomeServices__title {
                     font-size: 24px;
@@ -66,7 +74,7 @@ export const StyledHomeServicesWrapper = styled.div`
             }
             .HomeServices__separator {
                 position: absolute;
-                bottom: 228px;
+                top: 190px;
                 width: 100%;
                 > img {
                     margin: 0px auto;
@@ -74,7 +82,7 @@ export const StyledHomeServicesWrapper = styled.div`
             }
             .HomeServices__description-wrapper {
                 position: absolute;
-                bottom: 135px;
+                top: 200px;
                 width: 100%;
                 text-align: center;
                 .HomeServices__description {

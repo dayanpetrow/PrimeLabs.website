@@ -6,6 +6,7 @@ import {
 } from './styledTeamPageContent'
 import { SectionTitle } from '../../common/'
 import { TeamMembers } from './teamMembers'
+import Linkedin from '../../../images/svgs/linked-in.svg'
 
 const TeamPageContent = () => (
     <StyledTeamPageContentWrapper>
@@ -42,7 +43,12 @@ const TeamPageContent = () => (
                             {member.name}
                         </div>
                         <div className="TeamGrid__item__position">
-                            {member.position} <span>{member.linkedin}</span>
+                            {member.position} 
+                            <span>
+                                <a href="http://google.com">
+                                    <img src={Linkedin} alt="LinkedIn Link" className="TeamGrid__item__Linkedin" />
+                                </a>
+                            </span>
                         </div>
                         <hr className="TeamGrid__item__separator" />
                         <div className="TeamGrid__item__bio">
