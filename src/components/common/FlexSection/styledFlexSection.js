@@ -1,26 +1,7 @@
 import styled from 'styled-components';
 
-export const SectionWithBackground = styled.div`
-    width: 100%;
-    background-image: url(${props => props.background});
-    background-repeat: no-repeat;
-    background-position: ${props => props.backgroundPosition};
-    padding: 80px 0px 40px 0px;
-    min-height: 1050px;
-    position: relative;
-    .SecondBackground {
-        position: absolute;
-        width: 100%;
-        opacity: 1;
-        top: 0;
-        left: 0;
-        height: 100%;
-        background-image: linear-gradient(rgba(250,252,252, 0.3) 10%, rgba(250,250,250, 1) 100%);
-        z-index: 9;
-    }
-`
-
 export const StyledFlexSection = styled.div`
+    padding: ${props => props.config.padding};
     display: flex;
     flex-wrap: wrap;
     align-items: center;

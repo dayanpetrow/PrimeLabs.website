@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyledFlexSection, SectionTitle, SectionWithBackground, OurWorkWithScroll } from '../../common';
-import { StyledWhiteLabelPageContent, SectionWrapper } from './styledWhiteLabelPageContent';
+import { StyledFlexSection, SectionTitle, OurWorkWithScroll } from '../../common';
+import { StyledWhiteLabelPageContent, SectionWrapper, SectionWithBackground } from './styledWhiteLabelPageContent';
 import ExchangeSolutions from '../../../images/white_label/exchange_solutions.png';
 import PrimeWalletBackground from '../../../images/white_label/prime_wallet_bg.png';
 import PrimeWalletImage from '../../../images/white_label/prime_wallet_image.png';

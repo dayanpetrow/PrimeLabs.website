@@ -73,19 +73,6 @@ export const StyledNewsContentWrapper = styled.div`
         width: 100%;
         max-width: 1238px;
         text-align: center;
-        > button {
-            border-radius: 35px;
-            background-color: #00a0df;
-            width: 175px;
-            height: 45px;
-            border: none;
-            text-transform: uppercase;
-            line-height: 45px;
-            font-size: 15px;
-            letter-spacing: 1.1px;
-            color: white;
-            box-shadow: 0 7px 25px 0 rgba(49, 114, 253, 0.5);
-        }
     }
 `
 

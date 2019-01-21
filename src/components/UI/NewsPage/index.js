@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyledNewsContentWrapper } from './styledNewsPageContent'
-import { SectionTitle } from '../../common/'
+import { SectionTitle, PrimeButton, buttonThemes } from '../../common/'
 
 const NewsPageContent = ({ news, loadMore, newsCount }) => (
     <StyledNewsContentWrapper>
@@ -23,7 +23,13 @@ const NewsPageContent = ({ news, loadMore, newsCount }) => (
             })}
         </div>
         <div className="News__load-button">
-            <button onClick={loadMore}>load more</button>
+            <PrimeButton 
+                theme={buttonThemes.blueSolid} 
+                onClick={loadMore} 
+                width={"175px"} 
+                >
+                load more
+            </PrimeButton>
         </div>
     </StyledNewsContentWrapper >
 )
