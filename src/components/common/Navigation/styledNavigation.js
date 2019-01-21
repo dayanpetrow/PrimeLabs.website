@@ -47,7 +47,7 @@ export const StyledNavigation = styled.div`
                     color: #1f1f1f;
                     text-decoration: none;
                     &.active {
-                        border-bottom: 3px solid red;
+                        text-decoration: underline;
                     }
                 }
             }

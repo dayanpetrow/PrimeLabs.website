@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="449px" height="878px" viewBox="0 0 449 878" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>6F65FFB7-BC24-4BA1-95D2-4B1F5FAE04C3</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="-2.91882575%" x2="64.4972924%" y2="127.727297%" id="linearGradient-1">
+            <stop stop-color="#D6E6FF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.186848958" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.703292411">
+        <g id="WhiteLabel-Exchange" transform="translate(-991.000000, -1983.000000)" fill="url(#linearGradient-1)">
+            <circle id="Oval-3" transform="translate(1430.257407, 2422.257407) rotate(-217.000000) translate(-1430.257407, -2422.257407) " cx="1430.25741" cy="2422.25741" r="438.61414"></circle>
+        </g>
+    </g>
+</svg>

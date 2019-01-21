@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyledCaseStudyGridWrapper } from './styledCaseStudyGrid';
-import CaseStudies from './caseStudies';
+import CaseStudies from '../../../constants/caseStudies';
 import { SectionTitle } from '../../common/';
 //import ReadMoreArrow from '../../../images/svgs/readmoreArrow.svg';
 

@@ -17,7 +17,7 @@ const Navigation = (props) => {
                         <NavLink to={`/`} exact activeClassName="active">Home</NavLink>
                     </li>
                     <li className="Navigation__navigation-list-item">
-                        <NavLink to={`/services`} activeClassName="active">Services</NavLink>
+                        <NavLink to={`/services`} exact={false} activeClassName="active">Services</NavLink>
                     </li>
                     <li className="Navigation__navigation-list-item">
                         <NavLink to={`/case-studies`} exact activeClassName="active">Case Studies</NavLink>

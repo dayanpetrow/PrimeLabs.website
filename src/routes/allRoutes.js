@@ -1,4 +1,5 @@
 import projectsRoutes from './projectsRoutes';
+import servicesRoutes from './servicesRoutes';
 import HomePage from '../pages/HomePage';
 import NewsPage from '../pages/NewsPage';
 import TeamPage from '../pages/TeamPage';
@@ -16,10 +17,11 @@ export default [
     { path: "/blockchain", page: BlockchainPage },
     { path: "/case-studies", page: CaseStudiesPage },
 
-    /*  project paths come from projectRoutes.js 
+    /* 
         just for separation of concerns
     */
     ...projectsRoutes, 
+    ...servicesRoutes,
 
     /* the 404 page MUST always be listed last with exact: false */
     { 

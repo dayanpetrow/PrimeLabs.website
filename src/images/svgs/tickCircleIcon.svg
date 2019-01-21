@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="158px" height="158px" viewBox="0 0 158 158" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>EB6E3196-CF44-4B0E-BBB9-67EB4620B603</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M40,0 L40,0 C62.09139,-4.05812251e-15 80,17.90861 80,40 L80,40 C80,62.09139 62.09139,80 40,80 L40,80 C17.90861,80 2.705415e-15,62.09139 0,40 L0,40 C-2.705415e-15,17.90861 17.90861,4.05812251e-15 40,0 Z" id="path-1"></path>
+        <filter x="-78.8%" y="-72.5%" width="257.5%" height="257.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.857816446   0 0 0 0 0.91446328   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="WhiteLabel-Exchange" transform="translate(-172.000000, -2491.000000)">
+            <g id="Benefits" transform="translate(93.000000, 2345.000000)">
+                <g id="Icon" transform="translate(118.000000, 180.000000)">
+                    <g id="Rectangle-2" opacity="0.703404018">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use stroke="#1565C0" stroke-width="1" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M54.4798499,30.5229746 C53.7864348,29.8256553 52.6619587,29.8256553 51.9685436,30.5230937 L36.2866124,46.2960139 L28.0315748,37.9930793 C27.3381597,37.2956409 26.2136836,37.2956409 25.5201501,37.9930793 C24.8266166,38.6905178 24.8266166,39.8215183 25.5201501,40.5190757 L35.0308408,50.0849489 C35.3776076,50.4337277 35.83211,50.6080575 36.286494,50.6080575 C36.740878,50.6080575 37.1954988,50.4336086 37.5421471,50.0849489 L54.4798499,33.048971 C55.1733834,32.3515326 55.1733834,31.2205321 54.4798499,30.5229746 Z" id="Path" fill="#1565C0"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
