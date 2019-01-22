@@ -35,7 +35,7 @@ export const StyledNavigation = styled.div`
                     padding: 0px 2px;
                     opacity: 0.1;
                 }
-                > a {
+                .Navigaton__link {
                     padding: 6px 10px;
                     font-size: 16px;
                     font-weight: normal;
@@ -56,11 +56,11 @@ export const StyledNavigation = styled.div`
     .Header__contacts {
         display: flex;
         align-items: right;
-        max-width: 120px;
+        max-width: 140px;
         > .Header__contact-button {
             border-radius: 35px;
             background-color: transparent;
-            width: 120px;
+            width: 140px;
             height: 46px;
             border: 2px solid #00a0df;
             font-size: 16px;
