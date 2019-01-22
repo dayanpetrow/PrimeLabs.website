@@ -49,10 +49,10 @@ export const StyledNavigation = styled.div`
                     &:before {
                         content: "";
                         position: absolute;
-                        width: calc(100%-4px);
+                        width: 100%;
                         height: 2px;
                         bottom: -7px;
-                        left: 2px;
+                        left: 0px;
                         background-color: #00a0df;
                         visibility: hidden;
                         -webkit-transform: scaleX(0);
