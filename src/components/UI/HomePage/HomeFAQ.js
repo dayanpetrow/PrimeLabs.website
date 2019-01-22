@@ -1,25 +1,67 @@
 import React from 'react';
 import { StyledHomeFaqWrapper } from './styledHomeFAQ'
 import { SectionTitle } from '../../common/';
+import Collapse from 'antd/lib/collapse';
+import Radio from 'antd/lib/radio';
+import { BlockchainIndustries, BlockchainPlatforms } from '../../../constants/FAQ';
 
-/*  
-    #TODO:
-    tabbed accordion
-*/
+const Panel = Collapse.Panel;
 
-const HomeFAQ = () => (
-    <StyledHomeFaqWrapper>
-        <SectionTitle mainText={"Frequently Asked Questions"} shadowText={"FAQ"} />
-        <div className="HomeFAQ__text">
-            Please check our FAQ for the most commonly asked 
-            questions and answers. For further questions not 
-            listed here or to be added please contact us via 
-            email or support sections of this site.
-        </div>
-        <div className="placeholder">
-            #todo: tabbed-accordion
-        </div>
-    </StyledHomeFaqWrapper>
-)
+class HomeFAQ extends React.Component {
+    state = {
+        display: "industries"
+    }
+
+    onChange = (e) => {
+        this.setState({
+          display: e.target.value,
+        });
+      }
+
+    render() {
+        const { display } = this.state;
+        return(
+            <StyledHomeFaqWrapper>
+            <SectionTitle mainText={"Impact of Blockchain"} shadowText={"FAQ"} />
+            <div className="HomeFAQ__text">
+                Remove friction, build trust and unlock new value across 
+                businesses and industries with the power of Blockchain. 
+                What will we solve together?
+            </div>
+            <div className="HomeFAQ__accordion">
+                <div className="HomeFAQ__view-change-wrapper">
+                    <Radio.Group 
+                        buttonStyle="solid" 
+                        defaultValue={"industries"} 
+                        value={display}
+                        onChange={this.onChange}
+                        >
+                        <Radio.Button value="industries">Industries</Radio.Button>
+                        <Radio.Button value="platforms">Blockchain platforms</Radio.Button>
+                    </Radio.Group>
+                </div>
+                {display === "industries" &&
+                    <Collapse bordered={false} defaultActiveKey={['1']} accordion={true}>
+                        {BlockchainIndustries.map((panel,index) => (
+                            <Panel header={panel.panelTitle} key={index}>
+                            <p>{panel.panelContent}</p>
+                            </Panel>
+                        ))}
+                    </Collapse>
+                }
+                {display === "platforms" &&
+                    <Collapse bordered={false} defaultActiveKey={['1']} accordion={true}>
+                        {BlockchainPlatforms.map((panel,index) => (
+                            <Panel header={panel.panelTitle} key={index}>
+                            <p>{panel.panelContent}</p>
+                            </Panel>
+                        ))}
+                    </Collapse>
+                }
+            </div>
+        </StyledHomeFaqWrapper>
+        )
+    }
+}
 
 export default HomeFAQ;
