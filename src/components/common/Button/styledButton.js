@@ -17,9 +17,10 @@ export const StyledButton = styled(Button)`
     border-radius: 35px;
     outline: none;
     background-color: ${props => props.config.background};
-    &:hover {
+    &:hover, &:focus {
         box-shadow: ${props => props.config.shadow};
         transition: all 0.5s ease;
-
+        background-color: ${props => props.config.background};
+        color: white;
     }
 `
