@@ -41,7 +41,7 @@ class HomeFAQ extends React.Component {
                     </Radio.Group>
                 </div>
                 {display === "industries" &&
-                    <Collapse bordered={false} defaultActiveKey={['1']} accordion={true}>
+                    <Collapse bordered={false} defaultActiveKey={['0']} accordion={true}>
                         {BlockchainIndustries.map((panel,index) => (
                             <Panel header={panel.panelTitle} key={index}>
                             <p>{panel.panelContent}</p>
@@ -50,7 +50,7 @@ class HomeFAQ extends React.Component {
                     </Collapse>
                 }
                 {display === "platforms" &&
-                    <Collapse bordered={false} defaultActiveKey={['1']} accordion={true}>
+                    <Collapse bordered={false} defaultActiveKey={['0']} accordion={true}>
                         {BlockchainPlatforms.map((panel,index) => (
                             <Panel header={panel.panelTitle} key={index}>
                             <p>{panel.panelContent}</p>
