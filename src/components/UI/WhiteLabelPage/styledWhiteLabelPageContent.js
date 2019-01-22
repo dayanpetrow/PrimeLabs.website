@@ -51,6 +51,7 @@ export const SectionWrapper = styled.div`
             max-width: 200px;
             width: 100%;
             text-align: center;
+            z-index: 13;
             .Benefits__text-wrapper {
                 font-size: 18px;
                 font-weight: bold;

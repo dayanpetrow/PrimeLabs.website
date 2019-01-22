@@ -21,6 +21,7 @@ export const StyledHomeServicesWrapper = styled.div`
             align-items: center;
             border-radius: 3px;
             border: 1px solid #fff;
+            border-color: transparent;
             position: relative;
             &:hover, &:active {
                 border: 1px solid #00a0df;
@@ -106,19 +107,6 @@ export const StyledHomeServicesWrapper = styled.div`
                 bottom: 52px;
                 opacity: 0;
                 transform: translateY(100px);
-                > .HomeServices__button {
-                    border-radius: 35px;
-                    background-color: #00a0df;
-                    width: 175px;
-                    height: 45px;
-                    border: none;
-                    text-transform: uppercase;
-                    line-height: 45px;
-                    font-size: 15px;
-                    letter-spacing: 1.1px;
-                    color: white;
-                    box-shadow: 0 7px 25px 0 rgba(49, 114, 253, 0.5);
-                }
             }
         }
     }

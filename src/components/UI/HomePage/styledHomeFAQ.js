@@ -2,8 +2,7 @@ import styled from 'styled-components';
 import HeaderCover from '../../../images/home_faq/bg@3x.jpg'
 
 export const StyledHomeFaqWrapper = styled.div`
-    padding: 100px 0px;
-    background-color: #dedede;
+    padding: 0px 0px 100px 0px;
     background-image: url(${HeaderCover});
     background-repeat: no-repeat;
     background-size: cover;

@@ -21,8 +21,10 @@ const menu = (
 
 const Navigation = (props) => {
     console.log(props);
-    const servicesClass = (props.match.path === "/services/white-label" || 
-        props.match.path === "/services/blockchain-development") ? "Navigaton__link active" : "Navigaton__link";
+    const servicesClass = (
+        props.match.path === "/services/white-label" || 
+        props.match.path === "/services/blockchain-development"
+        ) ? "Navigaton__link active" : "Navigaton__link";
     return (
         <StyledNavigation>
             <div className="Header__logo">
@@ -34,7 +36,7 @@ const Navigation = (props) => {
                         <NavLink to={`/`} exact activeClassName="active" className="Navigaton__link">Home</NavLink>
                     </li>
                     <li className="Navigation__navigation-list-item">
-                        <Dropdown overlay={menu} trigger={['hover']}>
+                        <Dropdown overlay={menu} trigger={['hover']} placement="bottomCenter">
                             <NavLink to={"#"} exact={false} className={servicesClass}>
                                  Services <Icon type="down" />
                             </NavLink>

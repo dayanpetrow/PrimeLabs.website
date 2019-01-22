@@ -1,9 +1,14 @@
 import styled from 'styled-components';
+import PatternBackground from '../../../images/svgs/pattern_background.svg';
 
 export const StyledHomeReviewsWrapper = styled.div`
     width: 100%;
     max-width: 1238px;
     margin: 50px auto;
+    background-image: url(${PatternBackground});
+    background-repeat: no-repeat;
+    background-size: fixed;
+    background-position: center bottom;
     .HomeReviews__Carousel-wrapper {
         .ant-carousel .slick-slide {
             width: 100%;

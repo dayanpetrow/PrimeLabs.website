@@ -19,7 +19,7 @@ export const HomePage = () => (
 
         <HomeHeader />
         <HomeServicesSection />
-        <HomeNewsletter />
+        {/* <HomeNewsletter /> */}
         <HomeFAQ />
         <HomeReviews />
         <HomePartners />

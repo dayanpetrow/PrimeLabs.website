@@ -22,6 +22,7 @@ const BlockchainDevPageContent = () => (
         <SectionTitle shadowText={"Types of Blockchains"} mainText={"Permissioned blockchains"} />
         <PermissionedBlockhains />
 
+        {/* section with background */}
         <SectionTitle shadowText={"Our experience"} mainText={"Portfolio"} />
         <PortfolioSection />
         <PrimeWalletSection />

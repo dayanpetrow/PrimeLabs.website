@@ -28,6 +28,7 @@ export const StyledNewsContentWrapper = styled.div`
             overflow: hidden;
             border-radius: 3px;
             border: 1px solid white;
+            border-color: transparent;
             padding: 50px 20px 50px 50px;
             &__title {
                 opacity: 0.5;
@@ -64,7 +65,12 @@ export const StyledNewsContentWrapper = styled.div`
             }
             &:hover {
                 transition: all 0.5s ease;
-                border: 1px solid red;
+                border: 1px solid #1565c0;
+                .News__flex-grid__item__title,
+                .News__flex-grid__item__summary,
+                .News__flex-grid__item__date {
+                    color: #1565c0;
+                }
             }
         }
     }

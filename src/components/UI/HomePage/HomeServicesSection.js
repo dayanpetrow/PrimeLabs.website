@@ -1,5 +1,6 @@
 import React from 'react';
-import { SectionTitle } from '../../common/';
+import { withRouter } from "react-router";
+import { SectionTitle, PrimeButton, buttonThemes } from '../../common/';
 import { StyledHomeServicesWrapper } from './styledHomeServicesSection'
 import Separator from '../../../images/home_services/separator.svg'
 import WhiteLabelImage from '../../../images/home_services/transaction.svg'
@@ -11,7 +12,7 @@ import ICO from '../../../images/home_services/ico.svg'
     third svg icon from the mockups
 */
 
-const HomeServicesSection = () => (
+const HomeServicesSection = (props) => (
     <StyledHomeServicesWrapper>
         <SectionTitle mainText={"Our services"} shadowText={"What we do"} />
         <div className="HomeServices__flex-grid">
@@ -35,7 +36,13 @@ const HomeServicesSection = () => (
                     </div>
                 </div>
                 <div className="HomeServices__button-wrapper">
-                    <button className="HomeServices__button" onClick={() => { alert('work in progress')}}>Learn more</button>
+                     <PrimeButton 
+                        theme={buttonThemes.blueSolid} 
+                        onClick={() => { props.history.push('/services/white-label') }}
+                        width={"175px"} 
+                    >
+                        Learn more
+                    </PrimeButton>
                 </div>
             </div>
 
@@ -58,7 +65,13 @@ const HomeServicesSection = () => (
                     </div>
                 </div>
                 <div className="HomeServices__button-wrapper">
-                    <button className="HomeServices__button" onClick={() => { alert('work in progress')}}>Learn more</button>
+                    <PrimeButton 
+                        theme={buttonThemes.blueSolid} 
+                        onClick={() => { props.history.push('/services/blockchain-development') }}
+                        width={"175px"} 
+                    >
+                        Learn more
+                    </PrimeButton>
                 </div>
             </div>
 
@@ -81,7 +94,13 @@ const HomeServicesSection = () => (
                     </div>
                 </div>
                 <div className="HomeServices__button-wrapper">
-                    <button className="HomeServices__button" onClick={() => { alert('work in progress')}}>Learn more</button>
+                    <PrimeButton 
+                        theme={buttonThemes.blueSolid} 
+                        onClick={() => { props.history.push('/services/initial-token-offering') }}
+                        width={"175px"} 
+                    >
+                        Learn more
+                    </PrimeButton>
                 </div>
             </div>
 
@@ -89,4 +108,4 @@ const HomeServicesSection = () => (
     </StyledHomeServicesWrapper>
 )
 
-export default HomeServicesSection;
+export default withRouter(HomeServicesSection);
