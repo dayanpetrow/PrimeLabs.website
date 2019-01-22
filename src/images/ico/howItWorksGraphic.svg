@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="402px" height="399px" viewBox="0 0 402 399" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>F5729D5B-C36A-4E9C-A720-2ABA80BC559B</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M157.042801,334.265011 C76.7528853,329.067816 11.922273,267.132486 2.23824551,188.146302 L71.4700375,188.146302 C80.0009786,229.569601 114.404046,261.544999 157.042801,266.436056 L157.042801,334.265011 Z" id="path-1"></path>
+        <filter x="-33.9%" y="-35.9%" width="167.8%" height="171.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="17.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.992156863   0 0 0 0 0.533333333   0 0 0 0 0.501960784  0 0 0 0.200549139 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M178.94516,334.265011 L178.94516,266.536465 C222.004985,262.000142 256.838801,229.864725 265.430522,188.146302 L333.749716,188.146302 C324.065688,267.132486 259.235076,329.067816 178.94516,334.265011 Z" id="path-3"></path>
+        <filter x="-33.9%" y="-35.9%" width="167.8%" height="171.9%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="17.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.133333333   0 0 0 0 0.505882353   0 0 0 0 0.91372549  0 0 0 0.201907835 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="60.3977273%" y1="100%" x2="36.7875474%" y2="6.62041232%" id="linearGradient-5">
+            <stop stop-color="#F071CC" offset="0%"></stop>
+            <stop stop-color="#FD887E" offset="100%"></stop>
+        </linearGradient>
+        <path d="M157.042801,69.7022214 C108.321857,75.2909613 70.3537292,116.242011 69.4498464,166.243942 L0.99398057,166.243942 C1.69993665,78.312022 70.362278,6.5715294 157.042801,0.960668202" id="path-6"></path>
+        <filter x="-33.6%" y="-31.8%" width="167.3%" height="163.5%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="17.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.97254902   0 0 0 0 0.501960784   0 0 0 0 0.611764706  0 0 0 0.203068388 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="57.9937327%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#91CAFF" offset="0%"></stop>
+            <stop stop-color="#589AFD" offset="100%"></stop>
+        </linearGradient>
+        <path d="M178.94516,0.960668202 C265.625683,6.5715294 334.288024,78.312022 334.993981,166.243942 L267.450713,166.243942 C266.541194,115.930241 228.103786,74.7806394 178.94516,69.6018119" id="path-9"></path>
+        <filter x="-33.6%" y="-31.8%" width="167.3%" height="163.5%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="17.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.435294118   0 0 0 0 0.678431373   0 0 0 0 0.996078431  0 0 0 0.201143569 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI-Guide" transform="translate(-809.000000, -4342.000000)">
+            <g id="Group-2" transform="translate(842.000000, 4374.000000)">
+                <g id="Chart">
+                    <g id="Path">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FD8880" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="Path">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#2281E9" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                    <g id="Path">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                        <use fill="url(#linearGradient-5)" fill-rule="evenodd" xlink:href="#path-6"></use>
+                    </g>
+                    <g id="Path">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                        <use fill="url(#linearGradient-8)" fill-rule="evenodd" xlink:href="#path-9"></use>
+                    </g>
+                </g>
+                <g id="Group" transform="translate(131.000000, 125.000000)" fill="#EEEEEE">
+                    <polygon id="Path" points="35.9329194 95.9702358 -5.86197757e-14 75.2209814 -5.86197757e-14 33.7224725 21.5255423 21.2887087 21.5255423 10.8548731 16.3415181 10.8548731 16.3415181 -4.65405492e-13 32.3804155 -4.65405492e-13 32.3804155 27.5516416 10.8548731 39.9854053 10.8548731 68.9580485 35.9329194 83.4312127 61.0241231 68.9580485 61.0241231 39.9854053 39.4985807 27.5516416 39.4985807 -4.65405492e-13 55.5374781 -4.65405492e-13 55.5374781 10.8548731 50.3534539 10.8548731 50.3534539 21.2887087 71.8789962 33.7224725 71.8789962 75.2209814"></polygon>
+                    <path d="M55.4190613,44.2747249 L55.4190613,64.7608309 L35.9460768,76.0104267 L16.4599349,64.7608309 L16.4599349,49.9061015 C18.925518,50.7670783 21.4977449,51.2850655 24.104397,51.4455199 C36.169753,51.4455199 36.169753,42.9195104 48.2482663,42.9195104 C50.6994438,42.8586242 53.1366206,43.3066346 55.4059039,44.2352526 L55.4190613,44.2747249 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

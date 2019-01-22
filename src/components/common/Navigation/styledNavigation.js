@@ -23,7 +23,6 @@ export const StyledNavigation = styled.div`
             list-style-type: none;
             margin: 0;
             padding: 0;
-            overflow: hidden;
             > li {
                 display: inline-block;
                 &:not(:last-child):after {
@@ -32,7 +31,7 @@ export const StyledNavigation = styled.div`
                     width: 2px;
                     background-color: #1f1f1f;
                     margin: 0px 5px;
-                    padding: 0px 2px;
+                    padding: 0px 1px;
                     opacity: 0.1;
                 }
                 .Navigaton__link {
@@ -46,8 +45,25 @@ export const StyledNavigation = styled.div`
                     text-align: center;
                     color: #1f1f1f;
                     text-decoration: none;
-                    &.active {
-                        text-decoration: underline;
+                    position: relative;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: calc(100%-4px);
+                        height: 2px;
+                        bottom: -7px;
+                        left: 2px;
+                        background-color: #00a0df;
+                        visibility: hidden;
+                        -webkit-transform: scaleX(0);
+                        transform: scaleX(0);
+                        -webkit-transition: all 0.3s ease-in-out 0s;
+                        transition: all 0.3s ease-in-out 0s;
+                    }
+                    &:hover:before, &.active:before {
+                        visibility: visible;
+                        -webkit-transform: scaleX(1);
+                        transform: scaleX(1);
                     }
                 }
             }
