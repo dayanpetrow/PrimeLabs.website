@@ -23,41 +23,46 @@ const Navigation = (props) => {
     console.log(props);
     const servicesClass = (
         props.match.path === "/services/white-label" || 
-        props.match.path === "/services/blockchain-development"
+        props.match.path === "/services/initial-token-offering" || 
+        props.match.path === "/services/blockchain-development" 
         ) ? "Navigaton__link active" : "Navigaton__link";
     return (
         <StyledNavigation>
-            <div className="Header__logo">
-                <img src={PrimeLabsLogo} alt="PrimeLabs Logo" />
-            </div>
-            <div className="Header__navigation">
-                <ul className="Header__navigation-list">
-                    <li className="Navigation__navigation-list-item">
-                        <NavLink to={`/`} exact activeClassName="active" className="Navigaton__link">Home</NavLink>
-                    </li>
-                    <li className="Navigation__navigation-list-item">
-                        <Dropdown overlay={menu} trigger={['hover']} placement="bottomCenter">
-                            <NavLink to={"#"} exact={false} className={servicesClass}>
-                                 Services <Icon type="down" />
-                            </NavLink>
-                        </Dropdown>
-                    </li>
-                    <li className="Navigation__navigation-list-item">
-                        <NavLink to={`/case-studies`} exact activeClassName="active" className="Navigaton__link">Case Studies</NavLink>
-                    </li>
-                    <li className="Navigation__navigation-list-item">
-                        <NavLink to={`/news`} exact activeClassName="active" className="Navigaton__link">News</NavLink>
-                    </li>
-                    <li className="Navigation__navigation-list-item">
-                        <NavLink to={`/team`} exact activeClassName="active" className="Navigaton__link">Team</NavLink>
-                    </li>
-                    <li className="Navigation__navigation-list-item">
-                        <NavLink to={`/contacts`} exact activeClassName="active" className="Navigaton__link">Contact us</NavLink>
-                    </li>
-                </ul>
-            </div>
-            <div className="Header__contacts">
-                <button className="Header__contact-button" onClick={() => { props.history.push("/ready-to-talk")}}>Ready to talk</button>
+            <div id="NavigationWrapper">
+                <div className="Navigation__container">
+                    <div className="Header__logo">
+                        <img src={PrimeLabsLogo} alt="PrimeLabs Logo" />
+                    </div>
+                    <div className="Header__navigation">
+                        <ul className="Header__navigation-list">
+                            <li className="Navigation__navigation-list-item">
+                                <NavLink to={`/`} exact activeClassName="active" className="Navigaton__link">Home</NavLink>
+                            </li>
+                            <li className="Navigation__navigation-list-item">
+                                <Dropdown overlay={menu} trigger={['hover']} placement="bottomCenter">
+                                    <NavLink to={"#"} exact={false} className={servicesClass}>
+                                        Services <Icon type="down" />
+                                    </NavLink>
+                                </Dropdown>
+                            </li>
+                            <li className="Navigation__navigation-list-item">
+                                <NavLink to={`/case-studies`} exact activeClassName="active" className="Navigaton__link">Case Studies</NavLink>
+                            </li>
+                            <li className="Navigation__navigation-list-item">
+                                <NavLink to={`/news`} exact activeClassName="active" className="Navigaton__link">News</NavLink>
+                            </li>
+                            <li className="Navigation__navigation-list-item">
+                                <NavLink to={`/team`} exact activeClassName="active" className="Navigaton__link">Team</NavLink>
+                            </li>
+                            <li className="Navigation__navigation-list-item">
+                                <NavLink to={`/contacts`} exact activeClassName="active" className="Navigaton__link">Contact us</NavLink>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="Header__contacts">
+                        <button className="Header__contact-button" onClick={() => { props.history.push("/ready-to-talk")}}>Ready to talk</button>
+                    </div>
+                </div>
             </div>
         </StyledNavigation>
     )

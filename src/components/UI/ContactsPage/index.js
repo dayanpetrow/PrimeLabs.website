@@ -7,7 +7,7 @@ import {
     StyledOption
 } from './styledContactsPageContent';
 import ContactsPageImage from '../../../images/svgs/contacts.svg'
-import { SectionTitle } from '../../common/';
+import { SectionTitle, PrimeButton, buttonThemes } from '../../common/'
 
 
 const ContactsPageContent = () => (
@@ -31,7 +31,15 @@ const ContactsPageContent = () => (
                     <StyledOption value="lucy">option 2</StyledOption>
                 </StyledSelect>
                 <StyledTextArea placeholder="Write your question" />
-                <h1>button placeholder</h1>
+                <div className="ContactsPage__button-container">
+                    <PrimeButton 
+                        theme={buttonThemes.blueSolid} 
+                        onClick={() => { alert('dasdasd')}} 
+                        width={"175px"} 
+                        >
+                        Submit
+                    </PrimeButton>
+                </div>
             </div>
         </div>
     </StyledContactsPageContentWrapper>

@@ -34,8 +34,8 @@ const TeamPageContent = () => (
         </StyledTeamText>
         <StyledTeamGrid>
             {
-                TeamMembers.map(member => (
-                    <div className="TeamGrid__item" key={member.name}>
+                TeamMembers.map((member,index) => (
+                    <div className="TeamGrid__item" key={index}>
                         <div className="TeamGrid__item__photo-wrapper">
                             <img src={member.image} alt="Default team member" />
                         </div>

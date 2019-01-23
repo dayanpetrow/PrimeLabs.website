@@ -13,7 +13,7 @@ export const StyledNewsContentWrapper = styled.div`
     width: 100%;
     max-width: 1238px;
     margin: 0px auto;
-    padding-top: 30px;
+    padding-top: 108px;
     .News__flex-grid {
         display: flex;
         flex-wrap: wrap;

@@ -1,15 +1,19 @@
 import React from 'react';
-import { 
-    StyledFlexSection, 
-    SectionTitle, 
-    FullWidthParagraph, 
-    OurWorkWithScroll 
+import {
+    StyledFlexSection,
+    SectionTitle,
+    FullWidthParagraph,
+    OurWorkWithScroll,
+    SectionWithBackground,
+    RightOvalBackground
 } from '../../common/';
 import { StyledContentWrapper } from './styledContentWrapper';
 import PublicBlockhainsImage from '../../../images/blockchain_dev/public_blockchain.png';
 import PermissionedBlockhainsImage from '../../../images/blockchain_dev/permissioned_blockchain.png';
+import SectionBackgroundTrees from '../../../images/svgs/section_background_trees.png';
 import PortfolioImage from '../../../images/blockchain_dev/portfolio.png';
 import WalletImage from '../../../images/blockchain_dev/wallet.png';
+import OvalBackgroundRight from '../../../images/svgs/rightOval.svg';
 
 const BlockchainDevPageContent = () => (
     <StyledContentWrapper>
@@ -23,9 +27,20 @@ const BlockchainDevPageContent = () => (
         <PermissionedBlockhains />
 
         {/* section with background */}
-        <SectionTitle shadowText={"Our experience"} mainText={"Portfolio"} />
-        <PortfolioSection />
-        <PrimeWalletSection />
+        <SectionWithBackground
+            background={SectionBackgroundTrees}
+            backgroundPosition="center top"
+        >
+            <div className="SecondBackground" />
+            <SectionTitle shadowText={"Our experience"} mainText={"Portfolio"} />
+
+            <PortfolioSection />
+
+            <RightOvalBackground>
+                <img className="Oval" src={OvalBackgroundRight} alt="Oval Background" />
+                <PrimeWalletSection />
+            </RightOvalBackground>
+        </SectionWithBackground>
 
         <OurWorkWithScroll />
 
@@ -44,12 +59,12 @@ const PlatformsSection = () => (
             cash burn against growing R&D budgets of incumbents.`}
         </FullWidthParagraph>
         <FullWidthParagraph>
-            In the decentralized era, using Blockchain technology, networks are 
-            turned into open and meritocratic markets. Bitcoin was the first 
-            Blockchain, with the primary use case being peerto-peer transport 
-            of digital currency. This represented the proof of concept. Under 
-            Blockchain technology, centralized proprietary services are being 
-            replaced with distributed and decentralized open ones; trusted 
+            In the decentralized era, using Blockchain technology, networks are
+            turned into open and meritocratic markets. Bitcoin was the first
+            Blockchain, with the primary use case being peerto-peer transport
+            of digital currency. This represented the proof of concept. Under
+            Blockchain technology, centralized proprietary services are being
+            replaced with distributed and decentralized open ones; trusted
             entities replaced with verifiable computation; brittle location
             addresses replaced with resilient content addresses; inefficient
             monolithic services replaced with peer-to-peer algorithmic markets.
@@ -186,8 +201,8 @@ const PrimeWalletSection = () => {
                             Ethereum Wallet
                         </div>
                         <div className="FlexSection__description">
-                            Prime Wallet is a fully-fledged secure mobile Ethereum Wallet 
-                            that works directly on the Ethereum network without any intermediaries. 
+                            Prime Wallet is a fully-fledged secure mobile Ethereum Wallet
+                            that works directly on the Ethereum network without any intermediaries.
                             With Prime Wallet you have complete control over your private
                             keys that are only stored on your device.
                         </div>

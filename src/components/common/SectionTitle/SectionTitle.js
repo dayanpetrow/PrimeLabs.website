@@ -16,15 +16,21 @@ props:
 export const SectionTitle = ({ 
     shadowText = 'Shadow Text', 
     mainText = 'Main Text', 
-    uppercase = false 
+    uppercase = false,
+    marginTop,
+    marginBottom
 }) => (
-    <StyledSectionTitleWrapper uppercase={uppercase} >
+    <StyledSectionTitleWrapper 
+        uppercase={uppercase} 
+        marginTop={marginTop}
+        marginBottom={marginBottom}
+    >
         <div className="SectionTitle__shadow-title">
             {shadowText}
         </div>
         <div className="SectionTitle__main-title">
-                {mainText}
-            </div>
+            {mainText}
+        </div>
     </StyledSectionTitleWrapper>
 )
 

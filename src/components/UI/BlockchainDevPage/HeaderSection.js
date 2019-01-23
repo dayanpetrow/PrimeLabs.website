@@ -1,10 +1,9 @@
 import React from 'react';
 import { StyledHeader } from './styledHeaderSection';
-import { Navigation, PrimeButton, buttonThemes } from '../../common/'
+import { PrimeButton, buttonThemes } from '../../common/'
 
 const HeaderSection = () => (  
     <StyledHeader>
-        <Navigation />
         <div className="BlockchainDev__header-content-wrapper">
             <div className="BlockchainDev__page-name">
                 Services

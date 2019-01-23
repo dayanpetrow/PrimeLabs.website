@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const StyledSectionTitleWrapper = styled.div`
     max-width: 1440px;
     margin: 0px auto;
+    margin-top: ${props => props.marginTop};
+    margin-bottom: ${props => props.marginBottom};
     width: 100%;
     overflow: hidden;
     height: 100px;

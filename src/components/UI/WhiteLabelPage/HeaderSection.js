@@ -1,10 +1,8 @@
 import React from 'react';
 import { StyledHeader } from './styledHeaderSection';
-import { Navigation } from '../../common/'
 
 const HeaderSection = () => (  
     <StyledHeader>
-        <Navigation />
         <div className="WhiteLabel__header-content-wrapper">
             <div className="WhiteLabel__page-name">
                 Services

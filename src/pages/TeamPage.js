@@ -1,5 +1,4 @@
 import React from 'react';
-import { Navigation } from '../components/common'
 import { Helmet } from "react-helmet";
 import TeamPageContent from '../components/UI/TeamPage'
 
@@ -10,7 +9,6 @@ const TeamPage = () => (
         <Helmet>
             <title>{PAGE_TITLE}</title>
         </Helmet>
-        <Navigation />
         <TeamPageContent />
     </div>
 )

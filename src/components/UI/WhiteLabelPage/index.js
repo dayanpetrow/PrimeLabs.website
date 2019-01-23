@@ -1,11 +1,11 @@
 import React from 'react';
-import { StyledFlexSection, SectionTitle, OurWorkWithScroll } from '../../common';
-import { StyledWhiteLabelPageContent, SectionWrapper, SectionWithBackground } from './styledWhiteLabelPageContent';
+import { StyledFlexSection, SectionTitle, OurWorkWithScroll, SectionWithBackground, RightOvalBackground } from '../../common';
+import { StyledWhiteLabelPageContent, SectionWrapper } from './styledWhiteLabelPageContent';
 import ExchangeSolutions from '../../../images/white_label/exchange_solutions.png';
-import PrimeWalletBackground from '../../../images/white_label/prime_wallet_bg.png';
+import SectionBackgroundTrees from '../../../images/svgs/section_background_trees.png';
 import PrimeWalletImage from '../../../images/white_label/prime_wallet_image.png';
 import ExchangeOfficeImage from '../../../images/white_label/exchange_office_image.png';
-import BenefitsBackground from '../../../images/svgs/rightOval.svg';
+import OvalBackgroundRight from '../../../images/svgs/rightOval.svg';
 import BenefitsImage from '../../../images/svgs/tickCircleIcon.svg';
 
 const WhiteLabelPageContent = () => (
@@ -16,7 +16,7 @@ const WhiteLabelPageContent = () => (
 
         {/* PRIME WALLET & EXCHANGE BACK OFFICE */}
         <SectionWithBackground
-            background={PrimeWalletBackground}
+            background={SectionBackgroundTrees}
             backgroundPosition="center top"
         >
             <div className="SecondBackground" />
@@ -24,12 +24,12 @@ const WhiteLabelPageContent = () => (
             <ExchangeBackOfficeSection />
 
             {/* BENEFITS */}
-            <div className="RightOvalBackground">
-                <img className="Oval" src={BenefitsBackground} alt="Oval Background" />
+            <RightOvalBackground>
+                <img className="Oval" src={OvalBackgroundRight} alt="Oval Background" />
                 <SectionTitle shadowText="Exchange solutions" mainText="Benefits" uppercase={true} />
                 <BenefitsSection />
-                <OurWorkWithScroll />
-            </div>
+            </RightOvalBackground>
+            <OurWorkWithScroll />
         </SectionWithBackground>
     </StyledWhiteLabelPageContent>
 )

@@ -10,7 +10,7 @@ export const StyledContactsPageContentWrapper = styled.div`
     width: 100%;
     max-width: 1238px;
     margin: 0px auto;
-    padding-top: 30px;
+    padding-top: 108px;
     background-image: url(${TeamOval});
     background-repeat: no-repeat;
     background-position: center 90%;

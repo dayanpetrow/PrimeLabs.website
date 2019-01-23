@@ -1,5 +1,4 @@
 import React from 'react';
-import { Navigation } from '../components/common'
 import { Helmet } from "react-helmet";
 import ContactsPageContent from '../components/UI/ContactsPage/'
 
@@ -10,7 +9,6 @@ const ContactsPage = () => (
         <Helmet>
             <title>{PAGE_TITLE}</title>
         </Helmet>
-        <Navigation />
         <ContactsPageContent />
     </div>
 )

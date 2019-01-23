@@ -8,6 +8,7 @@ export const StyledTeamPageContentWrapper = styled.div`
     background-image: url(${TeamOval});
     background-repeat: no-repeat;
     background-position: center 34%;
+    padding-top: 108px;
 `
 
 export const StyledTeamGrid = styled.div`
@@ -106,7 +107,6 @@ export const StyledTeamText = styled.div`
     width: 100%;
     max-width: 1238px;
     margin: 0 auto;
-    padding-top: 30px;
     .TeamPage__text-wrapper {
         width: 100%;
         max-width: 1001px;

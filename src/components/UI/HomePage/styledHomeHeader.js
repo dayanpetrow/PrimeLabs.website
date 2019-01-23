@@ -14,10 +14,10 @@ export const HomeHeaderWrapper = styled.div`
         width: 100%;
         max-width: 1280px;
         margin: 0px auto;
+        padding-top: 288px;
         .HomeHeader__title {
             margin: 0 auto;
             max-width: 930px;
-            margin-top: calc(50px + 15vh);
             font-size: calc(28px + 2vw);
             font-weight: 500;
             font-style: normal;

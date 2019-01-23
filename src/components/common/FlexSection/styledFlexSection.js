@@ -6,14 +6,13 @@ export const StyledFlexSection = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    z-index: 3;
     margin-bottom: ${props => props.config.sectionBottomMargin}px;
     .FlexSection__left-column {
-        z-index: 10;
         width: 100%;
         max-width: ${props => props.config.leftColumnSize}px;
     }
     .FlexSection__right-column {
-        z-index: 10;
         width: 100%;
         max-width: ${props => props.config.rightColumnSize}px;
     }
@@ -22,6 +21,7 @@ export const StyledFlexSection = styled.div`
         width: 100%;
         margin: 0px auto;
         .FlexSection__title {
+            z-index: 3;
             font-size: 35px;
             font-weight: bold;
             font-style: normal;

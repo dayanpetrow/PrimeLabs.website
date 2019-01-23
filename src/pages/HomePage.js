@@ -2,7 +2,6 @@ import React from 'react';
 import { 
     HomeHeader, 
     HomeServicesSection, 
-    HomeNewsletter, 
     HomeFAQ, 
     HomeReviews,
     HomePartners
@@ -19,7 +18,6 @@ export const HomePage = () => (
 
         <HomeHeader />
         <HomeServicesSection />
-        {/* <HomeNewsletter /> */}
         <HomeFAQ />
         <HomeReviews />
         <HomePartners />

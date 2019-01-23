@@ -1,5 +1,4 @@
 import React from 'react';
-import { Navigation } from '../components/common'
 import { Helmet } from "react-helmet";
 import CaseStudyGrid from '../components/UI/CaseStudiesPage/'
 
@@ -10,7 +9,6 @@ const CaseStudiesPage = () => (
         <Helmet>
             <title>{PAGE_TITLE}</title>
         </Helmet>
-        <Navigation />
         <CaseStudyGrid />
     </div>
 )

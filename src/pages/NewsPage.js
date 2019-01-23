@@ -1,5 +1,4 @@
 import React from 'react';
-import { Navigation } from '../components/common'
 import { Helmet } from "react-helmet";
 import NewsPageContent from '../components/UI/NewsPage'
 import dummyNews from '../components/UI/NewsPage/dummyNews';
@@ -31,7 +30,6 @@ class NewsPage extends React.Component {
                 <Helmet>
                     <title>{PAGE_TITLE}</title>
                 </Helmet>
-                <Navigation />
                 <NewsPageContent news={news} loadMore={this.loadMore} newsCount={newsCount} />
             </div>
         )

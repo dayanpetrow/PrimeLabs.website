@@ -15,8 +15,8 @@ export const StyledHeader = styled.div`
         max-width: 1238px;
         margin: 0px auto;
         text-align: left;
+        padding-top: 143px;
         .BlockchainDev__page-name {
-            margin-top: 30px;
             font-size: 18px;
             font-weight: 500;
             font-style: normal;

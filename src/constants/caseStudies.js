@@ -14,56 +14,56 @@ export default [
     {
         img: NaturalCapitalInvestment,
         title: "Natural capital investment",
-        url: "http://google.com",
+        url: "/case-studies/nci",
     },
     {
         img: TokenEstate,
         title: "Token Estate: Real Estate Investing Platform",
-        url: "http://google.com",
+        url: "/case-studies/token-estate",
     },
     {
         img: TransparentDonation,
         title: "INNO4 GOOD: Transparent Donations",
-        url: "http://google.com",
+        url: "/case-studies/aidonic",
     },
     {
         img: DisruptingMarkets,
         title: "Disrupting the financial markets, one block at a time",
-        url: "http://google.com",
+        url: "/case-studies/dfm",
     },
     {
         img: AlgoStore,
         title: "AlgoStore: Automated trading at Speed",
-        url: "http://google.com",
+        url: "/case-studies/automated-trading",
     },
     {
         img: DNA,
         title: "A.DNA: Advanced Company DNA",
-        url: "http://google.com",
+        url: "/case-studies/adna",
     },
     {
         img: SecureCrypto,
         title: "Creating a secure way for storying crypto",
-        url: "http://google.com",
+        url: "/case-studies/storying-crypto",
     },
     {
         img: CFD,
         title: "CFD Trading Platform",
-        url: "http://google.com",
+        url: "/case-studies/cfd",
     },
     {
         img: SourcingLiquidity,
         title: "Sourcing liquidity on demand ",
-        url: "http://google.com",
+        url: "/case-studies/sourcing-liquidity",
     },
     {
         img: ModernMoney,
         title: "Modern Money",
-        url: "http://google.com",
+        url: "/case-studies/modern-money",
     },
     {
         img: MyBit,
         title: "MyBit",
-        url: "http://google.com",
+        url: "/case-studies/mybit",
     }
 ]
