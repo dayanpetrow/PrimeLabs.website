@@ -1,6 +1,25 @@
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 import HeaderCover from '../../../images/home_header/bg@3x.jpg'
 
+const scaleAnimation = keyframes`
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px)
+    opacity: 1;
+  }
+`
+
+const opacityAnimation = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`
 export const HomeHeaderWrapper = styled.div`
     height: 80vh;
     max-height: 763px;
@@ -27,6 +46,7 @@ export const HomeHeaderWrapper = styled.div`
             letter-spacing: 1.5px;
             text-align: center;
             color: #1f1f1f;
+            animation: ${scaleAnimation} 1s;
         }
         .HomeHeader__subtitle {
             margin: 0 auto;
@@ -42,6 +62,7 @@ export const HomeHeaderWrapper = styled.div`
             letter-spacing: 0.5px;
             text-align: center;
             color: #1f1f1f;
+            animation: ${opacityAnimation} 1.5s ease-in;
         }
     }
 `

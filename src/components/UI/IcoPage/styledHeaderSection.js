@@ -1,5 +1,27 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import HeaderCover from '../../../images/ico/header_bg.png'
+
+const translateAnimation = keyframes`
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px)
+    opacity: 1;
+  }
+`
+
+const translateRightAnimation = keyframes`
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px)
+    opacity: 1;
+  }
+`
 
 export const StyledHeader = styled.div`
     height: 80vh;
@@ -24,6 +46,7 @@ export const StyledHeader = styled.div`
             line-height: 2.39;
             letter-spacing: 1.2px;
             color: #1565c0;
+            animation: ${translateAnimation} 0.5s ease-in;
         }
         .WhiteLabel__page-title {
             margin: 10px 0px 30px 0px;
@@ -36,6 +59,7 @@ export const StyledHeader = styled.div`
             letter-spacing: 1.5px;
             color: #1f1f1f;
             text-transform: uppercase;
+            animation: ${translateRightAnimation} 0.5s ease-in;
         }
         .WhiteLabel__page-description {
             max-width: 614px;
@@ -48,6 +72,7 @@ export const StyledHeader = styled.div`
             text-align: justify;
             color: #1f1f1f;
             margin: 15px 0px;
+            animation: ${translateRightAnimation} 0.5s ease-in;
         }
     }
 `
