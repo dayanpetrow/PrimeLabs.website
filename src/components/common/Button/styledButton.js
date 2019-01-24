@@ -17,10 +17,12 @@ export const StyledButton = styled(Button)`
     border-radius: 35px;
     outline: none;
     background-color: ${props => props.config.background};
+    color: ${props => props.config.color || "white"};
     &:hover, &:focus {
         box-shadow: ${props => props.config.shadow};
         transition: all 0.5s ease;
+        border: ${props => props.config.hoverBorder};
         background-color: ${props => props.config.background};
-        color: white;
+        color: ${props => props.config.color || "white"};
     }
 `

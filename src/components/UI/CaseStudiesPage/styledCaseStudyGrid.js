@@ -9,11 +9,15 @@ const newsKeyframes = keyframes`
   }
 `
 
+export const ContentWrapper = styled.div`
+  width: 100%;
+  padding-top: 108px;
+`
+
 export const StyledCaseStudyGridWrapper = styled.div`
     width: 100%;
     max-width: 1238px;
     margin: 0px auto;
-    padding-top: 108px;
     .CaseStudies__flex-grid {
         display: flex;
         flex-wrap: wrap;

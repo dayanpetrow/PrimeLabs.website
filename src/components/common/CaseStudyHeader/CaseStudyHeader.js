@@ -18,7 +18,7 @@ const CaseStudyHeader = ({ data, history }) => (
                         {data.withButton &&
                             <div className="HeaderCS__button">
                                 <PrimeButton 
-                                    theme={buttonThemes.blueSolid} 
+                                    theme={buttonThemes.blue} 
                                     onClick={() => { history.push(data.buttonUrl) }}
                                     width={"160px"} 
                                     >
@@ -31,9 +31,20 @@ const CaseStudyHeader = ({ data, history }) => (
             </StyledPositionWrapper>
         </StyledCaseStudyHeader>
         <StyledHeaderDescriptions>
-            {(data.descriptions).map((paragraph,index) => (
-                <p key={index}>{paragraph}</p>
-            ))}
+            {(data.descriptions).map((element,index) => {
+                const item = Array.isArray(element);
+                return !item ? (
+                        <p key={index}>{element}</p>
+                    ) : (
+                        <div className="HeaderList" key={index}>
+                            {element.map((listItem, itemIndex) => (
+                                <div className="HeaderList__item" key={itemIndex}>
+                                    {listItem}
+                                </div>
+                            ))}
+                        </div>
+                    )
+            })}
         </StyledHeaderDescriptions>
     </React.Fragment>
 )

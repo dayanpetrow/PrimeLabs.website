@@ -31,18 +31,17 @@ const BlockchainDevPageContent = () => (
             background={SectionBackgroundTrees}
             backgroundPosition="center top"
         >
-            <div className="SecondBackground" />
             <SectionTitle shadowText={"Our experience"} mainText={"Portfolio"} />
 
             <PortfolioSection />
+            <PrimeWalletSection />
 
-            <RightOvalBackground>
+            <RightOvalBackground top={"-600px"}>
                 <img className="Oval" src={OvalBackgroundRight} alt="Oval Background" />
-                <PrimeWalletSection />
+                <OurWorkWithScroll />
             </RightOvalBackground>
-        </SectionWithBackground>
 
-        <OurWorkWithScroll />
+        </SectionWithBackground>
 
     </StyledContentWrapper>
 )

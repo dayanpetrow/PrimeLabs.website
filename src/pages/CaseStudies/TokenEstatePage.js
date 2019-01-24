@@ -37,8 +37,6 @@ const TokenEstate = () => (
             background={SectionBackgroundTrees}
             backgroundPosition="center top"
         >
-            <div className="SecondBackground" />
-
             <CenteredImage img={TokenEstateWebsite} maxWidth={"1376px"} alt={"AlgoStore"} />
 
             <SectionTitle 

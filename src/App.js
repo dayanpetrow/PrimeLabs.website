@@ -14,7 +14,7 @@ class App extends Component {
   }
 
   handleScroll() {
-      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("NavigationWrapper").style.padding = "14px 0px 14px 0px";
         document.getElementById("NavigationWrapper").style.background = "rgba(255,255,255,1)";
       } else {

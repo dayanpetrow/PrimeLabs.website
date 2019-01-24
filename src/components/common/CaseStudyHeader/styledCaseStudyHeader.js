@@ -12,7 +12,7 @@ export const StyledCaseStudyHeader = styled.div`
     .Header__content-wrapper {
         width: 40%;
         min-height: 163px;
-        background-color: #fbfbfb;
+        background-color: #fff;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -72,5 +72,27 @@ export const StyledHeaderDescriptions = styled.div`
         line-height: 1.44;
         letter-spacing: 0.5px;
         color: #1f1f1f;
+    }
+    .HeaderList {
+        width: 100%;
+        max-width: 620px;
+        margin-bottom: 15px;
+        .HeaderList__item {
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.44;
+            letter-spacing: 0.5px;
+            color: #1f1f1f;
+            position: relative;
+            padding-left: 20px;
+            &:before {
+                content: "•";
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
     }
 `

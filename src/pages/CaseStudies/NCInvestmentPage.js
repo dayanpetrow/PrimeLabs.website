@@ -41,7 +41,6 @@ const NCInvestmentPage = () => (
             backgroundPosition="center top"
             padding={"0px 0px 40px 0px"}
         >
-            <div className="SecondBackground" />
             <CaseStudyList>
                 {[
                     `Net Positive Pledge with carbon calculator implicating user’s impact on the environment`,

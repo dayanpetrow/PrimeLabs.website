@@ -44,7 +44,6 @@ const AlgoStorePage = () => (
             background={SectionBackgroundTrees}
             backgroundPosition="center top"
         >
-            <div className="SecondBackground" />
 
             <SectionTitle 
                 marginTop={"70px"} marginBottom={"60px"} shadowText={"Resolution"} mainText={"Challenges"} 

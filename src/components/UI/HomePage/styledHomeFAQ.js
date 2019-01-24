@@ -7,6 +7,7 @@ export const StyledHomeFaqWrapper = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    padding-top: 50px;
     .HomeFAQ__text {
         width: 90%;
         max-width: 950px;

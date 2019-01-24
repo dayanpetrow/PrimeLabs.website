@@ -37,7 +37,12 @@ export const StyledInput = styled(Input)`
     margin: 12px 0;
     border-radius: 35px;
     padding-left: 20px;
+    transition: all 0.4s ease;
     border: 1px solid #00a0df;
+    color: #1f1f1f;
+    &:focus {
+        border: 1px solid #00a0df;
+    }
     &::placeholder {
         font-size: 16px;
         font-weight: normal;
@@ -45,7 +50,7 @@ export const StyledInput = styled(Input)`
         font-stretch: normal;
         line-height: 1.44;
         letter-spacing: 0.5px;
-        color: #1f1f1f;
+        color: #8f8f8f;
     }
 `
 
@@ -57,6 +62,10 @@ export const StyledSelect = styled(Select)`
         border-radius: 35px;
         padding-left: 10px;
         border: 1px solid #00a0df;
+        color: #1f1f1f;
+        &:focus {
+            border: 1px solid #00a0df;
+        }
     }
     .ant-select-selection-selected-value {
         line-height: 43px;
@@ -73,7 +82,7 @@ export const StyledSelect = styled(Select)`
         font-style: normal;
         font-stretch: normal;
         letter-spacing: 0.5px;
-        color: #1f1f1f;
+        color: #8f8f8f;
     }
 `
 
@@ -84,6 +93,10 @@ export const StyledTextArea = styled(TextArea)`
     border-radius: 25px !important;
     padding: 10px 20px!important;
     border: 1px solid #00a0df;
+    color: #1f1f1f;
+    &:focus {
+        border: 1px solid #00a0df;
+    }
     &::placeholder {
         font-size: 16px;
         font-weight: normal;
@@ -91,7 +104,7 @@ export const StyledTextArea = styled(TextArea)`
         font-stretch: normal;
         line-height: 1.44;
         letter-spacing: 0.5px;
-        color: #1f1f1f;
+        color: #8f8f8f;
     }
 `
 

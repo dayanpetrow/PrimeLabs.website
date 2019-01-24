@@ -38,7 +38,6 @@ const AidonicPage = () => (
             background={SectionBackgroundTrees}
             backgroundPosition="center top"
         >
-            <div className="SecondBackground" />
 
             <CenteredImage img={AidoinicCentered} maxWidth={"1259px"} alt={"AlgoStore"} />
 

@@ -39,7 +39,6 @@ const CFDPage = () => (
             backgroundPosition="center top"
             padding={"0px 0px 40px 0px"}
         >
-            <div className="SecondBackground" />
 
             <CenteredImage img={CFDCentered} maxWidth={"1440px"} alt={"Natural capital investment"} />
 

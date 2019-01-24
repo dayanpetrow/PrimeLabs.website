@@ -31,45 +31,42 @@ export const StyledNewsContentWrapper = styled.div`
             border-color: transparent;
             padding: 50px 20px 50px 50px;
             &__title {
-                opacity: 0.5;
                 font-size: 24px;
                 font-weight: normal;
                 font-style: normal;
                 font-stretch: normal;
                 line-height: 1.79;
                 letter-spacing: 0.8px;
-                color: #1f1f1f;
+                color: #8c8c8c;
                 max-width: 472px;
             }
             &__summary {
-                opacity: 0.5;
                 font-size: 16px;
                 font-weight: normal;
                 font-style: normal;
                 font-stretch: normal;
                 line-height: 1.44;
                 letter-spacing: 0.5px;
-                color: #1f1f1f;
+                color: #8c8c8c;
                 max-width: 453px;
                 padding: 14px 0px;
             }
             &__date {
-                opacity: 0.5;
                 font-size: 14px;
                 font-weight: 500;
                 font-style: normal;
                 font-stretch: normal;
                 line-height: 1.64;
                 letter-spacing: 0.1px;
-                color: #000000;
+                color: #828282;
             }
             &:hover {
                 transition: all 0.5s ease;
-                border: 1px solid #1565c0;
+                border: 1px solid #1968c1;
                 .News__flex-grid__item__title,
                 .News__flex-grid__item__summary,
                 .News__flex-grid__item__date {
-                    color: #1565c0;
+                    color: #1968c1;
                 }
             }
         }
