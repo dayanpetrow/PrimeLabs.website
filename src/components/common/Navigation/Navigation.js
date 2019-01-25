@@ -68,6 +68,19 @@ const Navigation = (props) => {
                             Ready to talk
                         </PrimeButton>
                     </div>
+                    <div className="Header__mobile-nav">
+                        <PrimeButton 
+                            theme={buttonThemes.navigationButton} 
+                            onClick={props.open}
+                            width={"60px"} 
+                            >
+                            <div className="HamburgerIcon">
+                                <div className="HamburgerIcon__element"></div>
+                                <div className="HamburgerIcon__element"></div>
+                                <div className="HamburgerIcon__element"></div>
+                            </div>
+                        </PrimeButton>
+                    </div>
                 </div>
             </div>
         </StyledNavigation>

@@ -16,6 +16,9 @@ export const StyledNavigation = styled.div`
             align-items: center;
             flex-wrap: wrap;
             margin: 0px auto;
+            @media (max-width: 1280px) {
+                padding: 0px 24px;
+            }
             .Header__logo {
                 display: flex;
                 justify-content: center;
@@ -25,6 +28,9 @@ export const StyledNavigation = styled.div`
                 max-width: 1030px;
                 margin-left: auto;
                 margin-right: 75px;
+                @media (max-width: 1000px) {
+                    display: none;
+                }
                 > ul {
                     list-style-type: none;
                     margin: 0;
@@ -79,6 +85,26 @@ export const StyledNavigation = styled.div`
                 display: flex;
                 align-items: right;
                 max-width: 160px;
+                @media (max-width: 1000px) {
+                    display: none;
+                }
+            }
+            .Header__mobile-nav {
+                align-items: right;
+                .HamburgerIcon {
+                    width: 25px;
+                    height: auto;
+                    margin: 0px auto;
+                    .HamburgerIcon__element {
+                        width: 25px;
+                        height: 3px;
+                        background-color: #00a0df;
+                        margin: 4px 0;
+                    }
+                }
+                @media (min-width: 1000px) {
+                    display: none;
+                }
             }
         }
     }

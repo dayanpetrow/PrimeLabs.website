@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch } from "react-router-dom";
 import allRoutes from './routes/allRoutes'
-import { Footer, Navigation } from './components/common/'
+import { Footer, Navigation, MobileNavigation } from './components/common/'
 
 class App extends Component {
 
@@ -11,6 +11,14 @@ class App extends Component {
 
   componentWillUnmount() {
       window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  openMobileNavigation() {
+    document.getElementById("MobileNavigation").style.height = "100%";
+  }
+
+  closeMobileNavigation() {
+    document.getElementById("MobileNavigation").style.height = "0%";
   }
 
   handleScroll() {
@@ -26,7 +34,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navigation />
+        <Navigation open={this.openMobileNavigation} />
+        <MobileNavigation close={this.closeMobileNavigation} />
         <Switch>
           {
             allRoutes.map(route => (
