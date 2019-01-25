@@ -9,7 +9,7 @@ export const StyledMobileNavigation = styled.div`
     left: 0;
     top: 0;
     background-color: #ffffff;
-    overflow-x: hidden; 
+    overflow: hidden; 
     transition: 0.5s; 
     .MobileNavigation__header {
       display: flex;
