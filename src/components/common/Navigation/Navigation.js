@@ -20,19 +20,17 @@ const menu = (
   );
 
 const Navigation = (props) => {
-    console.log(props);
     const servicesClass = (
         props.location.pathname === "/services/white-label" || 
         props.location.pathname === "/services/initial-token-offering" || 
         props.location.pathname === "/services/blockchain-development" 
         ) ? "Navigaton__link active" : "Navigaton__link";
-    console.log(servicesClass)
     return (
         <StyledNavigation>
             <div id="NavigationWrapper">
                 <div className="Navigation__container">
                     <div className="Header__logo">
-                        <img src={PrimeLabsLogo} alt="PrimeLabs Logo" />
+                        <a href="/"><img src={PrimeLabsLogo} alt="PrimeLabs Logo" /></a>
                     </div>
                     <div className="Header__navigation">
                         <ul className="Header__navigation-list">

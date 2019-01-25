@@ -17,7 +17,6 @@ import SmartValorGroupedScreens from '../../images/case_study_pages/SmartValor/g
 import SmartValorPresales from '../../images/case_study_pages/SmartValor/presales@3x.png';
 /* backgrounds */
 import SectionBackgroundTrees from '../../images/svgs/section_background_trees.png';
-import OvalBackgroundRight from '../../images/svgs/rightOval.svg';
 
 const SmartValorPage = () => (
     <React.Fragment>
