@@ -78,27 +78,7 @@ export const StyledNavigation = styled.div`
             .Header__contacts {
                 display: flex;
                 align-items: right;
-                max-width: 140px;
-                > .Header__contact-button {
-                    border-radius: 35px;
-                    background-color: transparent;
-                    width: 140px;
-                    height: 46px;
-                    border: 2px solid #00a0df;
-                    font-size: 16px;
-                    font-weight: normal;
-                    font-style: normal;
-                    font-stretch: normal;
-                    line-height: 1.25;
-                    letter-spacing: 0.5px;
-                    text-align: center;
-                    color: #1f1f1f;
-                    transition: border 0.5s ease;
-                    &:hover {
-                        border: 2px solid pink;
-                        transition: border 0.5s ease;
-                    }
-                }
+                max-width: 160px;
             }
         }
     }

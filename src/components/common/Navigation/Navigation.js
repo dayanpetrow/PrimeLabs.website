@@ -4,6 +4,7 @@ import { NavLink, Link } from "react-router-dom";
 import { StyledNavigation } from './styledNavigation'
 import PrimeLabsLogo from '../../../images/svgs/PrimeLabsLogo.svg'
 import { Menu, Dropdown, Icon } from 'antd';
+import { PrimeButton, buttonThemes } from '../../common/'
 
 const menu = (
     <Menu>
@@ -59,7 +60,13 @@ const Navigation = (props) => {
                         </ul>
                     </div>
                     <div className="Header__contacts">
-                        <button className="Header__contact-button" onClick={() => { props.history.push("/ready-to-talk")}}>Ready to talk</button>
+                        <PrimeButton 
+                            theme={buttonThemes.navigationButton} 
+                            onClick={() => { props.history.push("/ready-to-talk")}}
+                            width={"160px"} 
+                            >
+                            Ready to talk
+                        </PrimeButton>
                     </div>
                 </div>
             </div>

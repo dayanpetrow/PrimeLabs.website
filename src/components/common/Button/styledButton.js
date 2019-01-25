@@ -4,7 +4,7 @@ import Button from 'antd/lib/button';
 export const StyledButton = styled(Button)`
     width: ${props => props.width};
     height: 45px;
-    font-size: 15px;
+    font-size: ${props => props.config.fontSize || "15px"};
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -12,7 +12,7 @@ export const StyledButton = styled(Button)`
     letter-spacing: 1.1px;
     text-align: center;
     color: #ffffff;
-    text-transform: uppercase;
+    text-transform: ${props => props.config.transform || "uppercase"};
     border: ${props => props.config.border};
     border-radius: 35px;
     outline: none;

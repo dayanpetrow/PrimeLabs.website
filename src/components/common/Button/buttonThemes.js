@@ -15,5 +15,14 @@ export default {
         border: "2px solid #00a0df",
         hoverBorder: "2px solid #f0426c",
         color: "#00a0df"
+    },
+    navigationButton: {
+        background: "transparent",
+        shadow: "none",
+        border: "2px solid #00a0df",
+        hoverBorder: "2px solid #f0426c",
+        color: "#1f1f1f",
+        transform: "none",
+        fontSize: "16px"
     }
 }
