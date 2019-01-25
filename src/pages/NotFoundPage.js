@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 const PAGE_TITLE = "not found custom title";
 
 const CaseStudiesPage = () => (
-    <div>
+    <div style={{paddingTop: "108px"}}>
         <Helmet>
             <title>{PAGE_TITLE}</title>
         </Helmet>

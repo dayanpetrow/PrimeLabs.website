@@ -33,14 +33,14 @@ const MobileNavigation = (props) => {
                         Services
                     </button>
                     <div id="MobileNavigation__services" className="MobileNavigation__links__services">
-                        <a href="/">White-label exchange</a>
-                        <a href="/">Blockchain development</a>
-                        <a href="/">Initial token offering</a>
+                        <a href="/services/white-label">White-label exchange</a>
+                        <a href="/services/blockchain-development">Blockchain development</a>
+                        <a href="/services/initial-token-offering">Initial token offering</a>
                     </div>
-                    <a href="/">Case studies</a>
-                    <a href="/">News</a>
-                    <a href="/">Team</a>
-                    <a href="/">Contact us</a>
+                    <a href="/case-studies">Case studies</a>
+                    <a href="/news">News</a>
+                    <a href="/team">Team</a>
+                    <a href="/contacts">Contact us</a>
                 </div>
                 <div className="MobileNavigation__talk">
                     <PrimeButton 
