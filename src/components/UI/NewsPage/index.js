@@ -2,7 +2,7 @@ import React from 'react';
 import { StyledNewsContentWrapper } from './styledNewsPageContent'
 import { SectionTitle, PrimeButton, buttonThemes } from '../../common/'
 
-const NewsPageContent = ({ news, loadMore, newsCount }) => (
+const NewsPageContent = ({ news, loadMore, newsCount, disabled }) => (
     <StyledNewsContentWrapper>
         <SectionTitle shadowText={"Latest news"} mainText={"News"} />
         <div className="News__flex-grid">
@@ -26,7 +26,8 @@ const NewsPageContent = ({ news, loadMore, newsCount }) => (
             <PrimeButton 
                 theme={buttonThemes.blueSolid} 
                 onClick={loadMore} 
-                width={"175px"} 
+                width={"175px"}
+                disabled={news.length === newsCount}
                 >
                 load more
             </PrimeButton>
