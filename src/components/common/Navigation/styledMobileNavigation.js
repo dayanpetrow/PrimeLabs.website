@@ -43,7 +43,13 @@ export const StyledMobileNavigation = styled.div`
       position: relative;
       text-align: center; 
       margin-top: 30px;
-      a {
+      button {
+        border: none;
+        margin: 0px auto;
+        outline: none;
+        background-color: transparent;
+      }
+      a, button {
         font-size: 24px;
         font-weight: 500;
         font-style: normal;
@@ -56,8 +62,16 @@ export const StyledMobileNavigation = styled.div`
         text-decoration: none;
         display: block; 
         transition: 0.3s;
-        &:hover, &:focus {
+        &:hover {
           color: #f0426c;
+        }
+      }
+      &__services {
+        height: 0;
+        overflow: hidden;
+        > a {
+          font-size: 16px;
+          line-height: 1.8;
         }
       }
     }

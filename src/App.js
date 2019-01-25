@@ -19,6 +19,7 @@ class App extends Component {
 
   closeMobileNavigation() {
     document.getElementById("MobileNavigation").style.height = "0%";
+    document.getElementById("MobileNavigation__services").style.height = "0px";
   }
 
   handleScroll() {
