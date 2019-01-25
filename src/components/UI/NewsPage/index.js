@@ -29,7 +29,7 @@ const NewsPageContent = ({ news, loadMore, newsCount, disabled }) => (
                 theme={buttonThemes.blueSolid} 
                 onClick={loadMore} 
                 width={"175px"}
-                disabled={news.length === newsCount}
+                disabled={news.length <= newsCount}
                 >
                 load more
             </PrimeButton>
