@@ -1,17 +1,25 @@
 import React from 'react';
 import { StyledContentWrapper, HowItWorksCardWrapper } from './styledContentWrapper';
-import { SectionTitle } from '../../common';
+import { SectionTitle, SectionWithBackground } from '../../common';
 import HowItWorksGraphic from '../../../images/ico/howItWorksGraphic.svg';
 import BenefitsImage from '../../../images/svgs/tickCircleIcon.svg';
+import SectionBackgroundTrees from '../../../images/svgs/section_background_trees.png';
 
 const IcoContent = () => (
-    <StyledContentWrapper>
-        <SectionTitle shadowText={"Initial token offering"} mainText={"How it works"} />
-        <HowItWorksSection />
-
-        <SectionTitle shadowText={"Initial token offering"} mainText={"Benefits"} />
-        <BenefitsSection />
-    </StyledContentWrapper>
+    <React.Fragment>
+        <SectionTitle shadowText={"Initial token offering"} mainText={"How it works"} marginTop={"80px"} />
+        <SectionWithBackground
+            background={SectionBackgroundTrees}
+            backgroundPosition="center top"
+            padding={"0px 0px 40px 0px"}
+        >
+            <StyledContentWrapper>
+                <HowItWorksSection />
+                <SectionTitle shadowText={"Initial token offering"} mainText={"Benefits"} marginTop={"120px"} />
+                <BenefitsSection />
+            </StyledContentWrapper>
+        </SectionWithBackground>
+    </React.Fragment>
 )
 
 const HowItWorksSection = () => (
