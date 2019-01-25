@@ -70,11 +70,16 @@ export const StyledCaseStudyGridWrapper = styled.div`
                         letter-spacing: 0.1px;
                         color: #000000;
                         text-decoration: none;
+                        transition: 0.4s;
+                        &:hover {
+                            color: #00a0df;
+                            transition: 0.4s;
+                            > span {
+                                color: color: #00a0df;
+                            }
+                        }
                         > span {
                             margin-left: 10px;
-                            > img {
-                                width: 8px;
-                            }
                         }
                     }
                 }

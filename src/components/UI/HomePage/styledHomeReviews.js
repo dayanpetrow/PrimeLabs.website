@@ -29,6 +29,7 @@ export const StyledHomeReviewsWrapper = styled.div`
                         border: none;
                         outline: none;
                         background: none;
+                        cursor: pointer;
                     }
                     .Carousel__Slide-flex--left {
                         text-align: center;
@@ -115,9 +116,15 @@ export const StyledHomeReviewsWrapper = styled.div`
             border-radius: 50%;
             margin: 5px;
             padding: 0;
+            transition: 0.4s;
+            cursor: pointer;
             &.active-slide {
                 background-color: #00a0df;
                 border: 1px solid #00a0df;
+            }
+            &:hover, &:focus {
+                border: 1px solid #00a0df;
+                transition: 0.4s;
             }
         }
     }

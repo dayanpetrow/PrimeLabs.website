@@ -78,6 +78,16 @@ export const StyledOurWorkWithScrollWrapper = styled.div`
                         letter-spacing: 0.1px;
                         color: #000000;
                         text-decoration: none;
+                        &:hover {
+                            color: #00a0df;
+                            transition: 0.4s;
+                            > span {
+                                color: color: #00a0df;
+                            }
+                        }
+                        > span {
+                            margin-left: 10px;
+                        }
                     }
                 }
             }

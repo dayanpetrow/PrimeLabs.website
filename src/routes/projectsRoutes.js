@@ -1,4 +1,3 @@
-import React from 'react'
 import AlgoStorePage from '../pages/CaseStudies/AlgoStorePage';
 import AidonicPage from '../pages/CaseStudies/AidonicPage';
 import TokenEstatePage from '../pages/CaseStudies/TokenEstatePage';
@@ -9,16 +8,13 @@ import MyBitPage from '../pages/CaseStudies/MyBitPage';
 import ModernMoneyPage from '../pages/CaseStudies/ModernMoneyPage';
 import SourcingLiquidityPage from '../pages/CaseStudies/SourcingLiquidityPage';
 import RaiffeisenPage from '../pages/CaseStudies/RaiffeisenPage';
-
-const WhiteLabelPage = () => (
-    <h1>coming soon</h1>
-)
+import SmartValorPage from '../pages/CaseStudies/SmartValorPage';
 
 export default [
     { path: "/case-studies/nci", page: NCInvestmentPage },
     { path: "/case-studies/token-estate", page: TokenEstatePage },
     { path: "/case-studies/aidonic", page: AidonicPage },
-    { path: "/case-studies/dfm", page: WhiteLabelPage },
+    { path: "/case-studies/dfm", page: SmartValorPage },
     { path: "/case-studies/automated-trading", page: AlgoStorePage },
     { path: "/case-studies/adna", page: AdnaPage },
     { path: "/case-studies/storying-crypto", page: RaiffeisenPage },

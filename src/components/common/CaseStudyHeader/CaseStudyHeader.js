@@ -9,9 +9,12 @@ import { PrimeButton, buttonThemes } from '../../common/'
 
 const CaseStudyHeader = ({ data, history }) => (
     <React.Fragment>
-        <StyledCaseStudyHeader headerCover={data.headerCover} headerPosition={data.headerPosition} >
+        <StyledCaseStudyHeader 
+            headerCover={data.headerCover} 
+            headerPosition={data.headerPosition} 
+        >
             <div className="Header__content-wrapper" />
-            <StyledPositionWrapper>
+            <StyledPositionWrapper titleSize={data.titleSize}>
                 <div className="HeaderCS__title-wrapper">
                     <div className="HeaderCS__title">
                         <h1>{data.title}</h1>

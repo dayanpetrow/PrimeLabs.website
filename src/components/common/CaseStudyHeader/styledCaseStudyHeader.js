@@ -36,7 +36,7 @@ export const StyledPositionWrapper = styled.div`
             position: relative;
             padding: 55px 227px 23px 0px;
             background-color: white;
-            width: calc(477px + 227px);
+            width: calc(${props => props.titleSize ? props.titleSize : "477px"} + 227px);
             height: 165px;
             > .HeaderCS__button {
                 position: absolute;
@@ -44,7 +44,7 @@ export const StyledPositionWrapper = styled.div`
                 right: 40px;
             }
             > h1 {
-                max-width: 477px;
+                max-width: ${props => props.titleSize ? props.titleSize : "477px"};
                 font-size: 35px;
                 font-weight: bold;
                 font-style: normal;

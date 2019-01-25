@@ -20,6 +20,7 @@ const opacityAnimation = keyframes`
     opacity: 1;
   }
 `
+
 export const HomeHeaderWrapper = styled.div`
     height: 80vh;
     max-height: 763px;

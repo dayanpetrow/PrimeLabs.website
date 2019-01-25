@@ -8,6 +8,16 @@ export const FlexImageRight = styled.div`
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    .CaseStudyFlex__paragraph-header {
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2.39;
+        letter-spacing: normal;
+        color: #1f1f1f;
+        text-transform: uppercase;
+    }
     .CaseStudyFlex__content {
         flex: 0 1 659px;
         font-size: 16px;
@@ -30,10 +40,21 @@ export const FlexImageRight = styled.div`
                 }
             }
         }
+        .CaseStudyFlex__image--in {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            > img {
+                width: 100%;
+                max-width: 450px;
+                margin: 0px auto;
+            }
+        }
     }
     .CaseStudyFlex__image {
         flex: 0 1 ${props => props.maxWidthImage};
         > img {
+            width: 100%;
             max-width: ${props => props.maxWidthImage};
             margin: 0px auto;
         }

@@ -2,7 +2,7 @@ import React from 'react';
 import { StyledCaseStudyGridWrapper, ContentWrapper } from './styledCaseStudyGrid';
 import CaseStudies from '../../../constants/caseStudies';
 import { SectionTitle, SectionWithBackground, } from '../../common/';
-import ReadMoreArrow from '../../../images/svgs/readmoreArrow.png';
+import Icon from 'antd/lib/icon';
 import SectionBackgroundTrees from '../../../images/svgs/section_background_trees.png';
 
 const CaseStudyGrid = () => (
@@ -28,7 +28,7 @@ const CaseStudyGrid = () => (
                                         <div className="CaseStudyCard__more">
                                             <a href={caseStudy.url}>
                                                 Read more 
-                                                <span><img src={ReadMoreArrow} alt="Read more" /></span>
+                                                <span><Icon type="caret-right" /></span>
                                             </a>
                                         </div>
                                     </div>

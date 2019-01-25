@@ -22,10 +22,11 @@ const menu = (
 const Navigation = (props) => {
     console.log(props);
     const servicesClass = (
-        props.match.path === "/services/white-label" || 
-        props.match.path === "/services/initial-token-offering" || 
-        props.match.path === "/services/blockchain-development" 
+        props.location.pathname === "/services/white-label" || 
+        props.location.pathname === "/services/initial-token-offering" || 
+        props.location.pathname === "/services/blockchain-development" 
         ) ? "Navigaton__link active" : "Navigaton__link";
+    console.log(servicesClass)
     return (
         <StyledNavigation>
             <div id="NavigationWrapper">

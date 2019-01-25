@@ -2,6 +2,7 @@ import React from 'react';
 import { StyledOurWorkWithScrollWrapper } from './styledOurWorkWithScroll';
 import CaseStudies from '../../../constants/caseStudies';
 import { SectionTitle } from '../../common/';
+import Icon from 'antd/lib/icon';
 //import ReadMoreArrow from '../../../images/svgs/readmoreArrow.svg';
 
 const OurWorkWithScroll = () => (
@@ -22,8 +23,7 @@ const OurWorkWithScroll = () => (
                                 <div className="OurWorkWithScroll__item__more">
                                     <a href={caseStudy.url}>
                                         Read more 
-                                        {/*<span><img src={ReadMoreArrow} alt="Read more" /></span>*/}
-                                        <span>([arrow placeholder])</span>
+                                        <span><Icon type="caret-right" /></span>
                                     </a>
                                 </div>
                             </div>
