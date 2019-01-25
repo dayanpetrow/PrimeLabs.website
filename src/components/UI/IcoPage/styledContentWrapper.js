@@ -18,6 +18,7 @@ export const StyledContentWrapper = styled.div`
             &--middle {
                 flex: 0 0 335px;
                 padding-top: 20px;
+                flex-shrink: 2;
             }
             &--right {
                 flex: 0 0 330px;
@@ -27,13 +28,21 @@ export const StyledContentWrapper = styled.div`
             display: flex;
             justify-content: center;
         }
-        @media (max-width: 1238px) {
+        @media (max-width: 1100px) {
             display: none;
         }
     }
     .TokenPage__HowItWorks--no-image {
-
-        @media (min-width: 1238px) {
+        display: flex;
+        max-width: 960px;
+        margin: 0px auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        > div {
+            margin: 30px 5px;
+            flex: 1 1 310px;
+        }
+        @media (min-width: 1100px) {
             display: none;
         }
     }
@@ -42,7 +51,7 @@ export const StyledContentWrapper = styled.div`
         flex-wrap: wrap;
         align-items: center;
         width: 100%;
-        max-width: 960px;
+        max-width: 930px;
         margin: 0px auto;
         justify-content: space-evenly;
         margin-bottom: 100px;
@@ -98,7 +107,7 @@ export const HowItWorksCardWrapper = styled.div`
     .HowItWorksCard__content {
         max-width: ${props => props.textWidth};
         width: 100%;
-        margin: 0px auto;
+        margin: ${props => props.align === "center" ? "0px auto" : "0px 0px 0px auto"};
         opacity: 0.5;
         font-size: 16px;
         font-weight: normal;
