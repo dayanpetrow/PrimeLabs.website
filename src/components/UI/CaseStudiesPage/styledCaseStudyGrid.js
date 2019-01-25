@@ -16,12 +16,12 @@ export const ContentWrapper = styled.div`
 
 export const StyledCaseStudyGridWrapper = styled.div`
     width: 100%;
-    max-width: 1238px;
+    max-width: 1100px;
     margin: 0px auto;
     .CaseStudies__flex-grid {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding-top: 30px;
         .CaseStudies__flex-grid__item {
             margin: 30px;

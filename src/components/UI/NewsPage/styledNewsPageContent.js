@@ -11,13 +11,13 @@ const newsKeyframes = keyframes`
 
 export const StyledNewsContentWrapper = styled.div`
     width: 100%;
-    max-width: 1238px;
+    max-width: 1050px;
     margin: 0px auto;
     padding-top: 108px;
     .News__flex-grid {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding-top: 30px;
         .News__flex-grid__item {
             margin: 10px;

@@ -103,12 +103,5 @@ export default [
                 cryptocurrency, and not just buy/sell/trade, then you have a few 
                 options. New investors can choose between`,
         date: "February 12, 2018"
-    },
-    {
-        title: "Meet our new Advisor: InvestСor Corporate СЕО George Giannoulakis",
-        summary: `How to invest in cryptocurrency: If you want to invest in 
-                cryptocurrency, and not just buy/sell/trade, then you have a few 
-                options. New investors can choose between`,
-        date: "February 10, 2018"
-    },
+    }
 ]
