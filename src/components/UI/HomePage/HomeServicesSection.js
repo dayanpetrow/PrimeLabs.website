@@ -14,7 +14,7 @@ import ICO from '../../../images/home_services/ico.svg'
 
 const HomeServicesSection = (props) => (
     <StyledHomeServicesWrapper>
-        <SectionTitle mainText={"Our services"} shadowText={"What we do"} />
+        <SectionTitle mainText={"Our Services"} shadowText={"What we do"} />
         <div className="HomeServices__flex-grid">
 
             <div className="HomeServices__flex-grid__column" tabIndex="1">

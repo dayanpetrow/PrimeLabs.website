@@ -8,7 +8,7 @@ import {
 } from '../components/UI/HomePage'
 import { Helmet } from "react-helmet";
 
-const PAGE_TITLE = "home custom title";
+const PAGE_TITLE = "PrimeLabs - Blockchain development & consulting";
 
 export const HomePage = () => (
     <div>

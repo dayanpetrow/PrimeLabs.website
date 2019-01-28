@@ -9,7 +9,7 @@ const Footer = () => (
         <div className="Footer__content-wrapper">
             <div className="Footer__flex-grid">
                 <div className="Footer__copyright">
-                    Copyright © 2018 Prime Labs
+                    Copyright © 2019 Prime Labs
                 </div>
                 <div className="Footer__flex-grid__icons">
                     <a href="http://google.com">

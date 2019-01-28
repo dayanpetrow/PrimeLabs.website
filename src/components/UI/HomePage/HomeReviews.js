@@ -43,6 +43,9 @@ class HomeReviews extends React.Component {
                                 currentSlide: current,
                             });
                         }}
+                        autoplay={true}
+                        autoplaySpeed={10000}
+                        draggable={true}
                     >
                         {Reviews.map((review,index) => (
                             <Review data={review} key={index} goPrevious={this.previous} goNext={this.next} />

@@ -22,7 +22,7 @@ export const StyledButton = styled(Button)`
         box-shadow: ${props => props.config.shadow};
         transition: all 0.5s ease;
         border: ${props => props.config.hoverBorder};
-        background-color: ${props => props.config.background};
+        background-color: ${props => props.config.hoverBackground};
         color: ${props => props.config.color || "white"};
     }
 `
