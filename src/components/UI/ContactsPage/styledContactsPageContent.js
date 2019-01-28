@@ -14,6 +14,9 @@ export const StyledContactsPageContentWrapper = styled.div`
     background-image: url(${TeamOval});
     background-repeat: no-repeat;
     background-position: center 90%;
+    @media (max-width: 1280px) {
+        max-width: 960px;
+    }
     .ContactsPage__flex {
         display: flex;
         flex-wrap: wrap;
@@ -23,10 +26,21 @@ export const StyledContactsPageContentWrapper = styled.div`
         &--left-column {
             width: 100%;
             max-width: 573px;
+            @media (max-width: 1280px) {
+                max-width: 460px;
+            }
+            > img {
+                @media (max-width: 1280px) {
+                    max-width: 460px;
+                }
+            }
         }
         &--right-column {
             width: 100%;
             max-width: 573px;
+            @media (max-width: 1280px) {
+                max-width: 460px;
+            }
         }
     }
 `

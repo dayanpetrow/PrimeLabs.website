@@ -6,6 +6,9 @@ export const StyledFooter = styled.div`
     max-width: 1238px;
     margin: 0px auto;
     margin-top: -50px;
+    @media (max-width: 1280px) {
+        max-width: 980px;
+    }
     .Footer__content-wrapper {
         width: 100%;
         max-width: 1238px;
@@ -15,6 +18,9 @@ export const StyledFooter = styled.div`
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom;
+        @media (max-width: 1280px) {
+            max-width: 980px;
+        }
         .Footer__flex-grid {
             display: flex;
             justify-content: space-between;

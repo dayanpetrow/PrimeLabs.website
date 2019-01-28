@@ -9,7 +9,7 @@ export const StyledMobileNavigation = styled.div`
     left: 0;
     top: 0;
     background-color: #ffffff;
-    overflow: hidden; 
+    overflow-x: hidden; 
     transition: 0.5s; 
     .MobileNavigation__header {
       display: flex;
@@ -79,6 +79,7 @@ export const StyledMobileNavigation = styled.div`
       margin-top: 50px;
       width: 100%;
       text-align: center;
+      margin-bottom: 50px;
     }
   }
 `

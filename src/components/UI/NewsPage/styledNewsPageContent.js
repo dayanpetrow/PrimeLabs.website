@@ -14,6 +14,9 @@ export const StyledNewsContentWrapper = styled.div`
     max-width: 1050px;
     margin: 0px auto;
     padding-top: 108px;
+    @media (max-width: 1280px) {
+        max-width: 980px;
+    }
     .News__flex-grid {
         display: flex;
         flex-wrap: wrap;
@@ -30,6 +33,10 @@ export const StyledNewsContentWrapper = styled.div`
             border: 1px solid white;
             border-color: transparent;
             padding: 50px 20px 50px 50px;
+            @media (max-width: 1280px) {
+                max-width: 450px;
+                padding: 30px 30px 30px 30px;
+            }
             &__title {
                 font-size: 24px;
                 font-weight: normal;

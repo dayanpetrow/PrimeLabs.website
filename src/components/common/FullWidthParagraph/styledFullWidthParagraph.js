@@ -4,6 +4,9 @@ export const FullWidthParagraphWrapper = styled.div`
     width: 100%;
     max-width: 1238px;
     margin: 0px auto;
+    @media (max-width: 1280px) {
+        max-width: 980px;
+    }
     > p {
         width: 100%;
         max-width: 1001px;

@@ -4,6 +4,9 @@ export const StyledHomeServicesWrapper = styled.div`
     width: 100%;
     max-width: 1280px;
     margin: 50px auto;
+    @media (max-width: 1280px) {
+        max-width: 980px;
+    }
     .HomeServices__flex-grid {
         margin-top: 30px;
         display: flex;
@@ -24,6 +27,9 @@ export const StyledHomeServicesWrapper = styled.div`
             border: 1px solid #fff;
             border-color: transparent;
             position: relative;
+            @media (max-width: 1280px) {
+                max-width: 300px;
+            }
             &:hover, &:active {
                 border: 1px solid #00a0df;
                 transition: all 0.5s ease;
@@ -72,6 +78,9 @@ export const StyledHomeServicesWrapper = styled.div`
                     letter-spacing: 0.7px;
                     text-align: center;
                     color: #00a0df;
+                    @media (max-width: 1280px) {
+                        font-size: 22px;
+                    }
                 }
             }
             .HomeServices__separator {
@@ -99,6 +108,9 @@ export const StyledHomeServicesWrapper = styled.div`
                     line-height: 1.44;
                     letter-spacing: 0.5px;
                     color: #1f1f1f;
+                    @media (max-width: 1280px) {
+                        font-size: 15px;
+                    }
                 }
             }
             .HomeServices__button-wrapper {

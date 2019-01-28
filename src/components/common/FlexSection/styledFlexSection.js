@@ -7,17 +7,32 @@ export const StyledFlexSection = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 3;
+    max-width: 1238px;
+    margin: 0px auto;
     margin-bottom: ${props => props.config.sectionBottomMargin}px;
+    @media (max-width: 1280px) {
+        max-width: 980px;
+    }
     .FlexSection__left-column {
         flex: 0 1 ${props => props.config.leftColumnSize}px;
+        @media (max-width: 1280px) {
+            max-width: 450px;
+        }
     }
     .FlexSection__right-column {
         flex: 0 1 ${props => props.config.rightColumnSize}px;
+        @media (max-width: 1280px) {
+            max-width: 450px;
+        }
     }
     .FlexSection__text-wrapper {
         max-width: ${props => props.config.textSize}px;
         width: 100%;
         margin: 0px auto;
+        @media (max-width: 1280px) {
+            padding: 0px 24px;
+            max-width: 500px;
+        }
         .FlexSection__title {
             z-index: 3;
             font-size: 35px;
@@ -47,6 +62,9 @@ export const StyledFlexSection = styled.div`
             max-width: ${props => props.imageSize};
             margin: 0px auto;
             margin-top: ${props => props.config.imageMarginTop}px;
+            @media (max-width: 1280px) {
+                max-width: 400px;
+            }
         }
     }
     .FlexSection__list {

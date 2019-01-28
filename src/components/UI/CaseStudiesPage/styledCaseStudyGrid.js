@@ -18,6 +18,9 @@ export const StyledCaseStudyGridWrapper = styled.div`
     width: 100%;
     max-width: 1100px;
     margin: 0px auto;
+    @media (max-width: 1280px) {
+        max-width: 980px;
+    }
     .CaseStudies__flex-grid {
         display: flex;
         flex-wrap: wrap;
@@ -30,6 +33,9 @@ export const StyledCaseStudyGridWrapper = styled.div`
             max-width: 450px;
             min-width: 300px;
             overflow: hidden;
+            @media (max-width: 1280px) {
+                max-width: 400px;
+            }
             .CaseStudyCard__content-wrapper {
                 position: relative;
                 height: 400px;

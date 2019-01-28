@@ -9,6 +9,9 @@ export const SectionWrapper = styled.div`
     max-width: 1238px;
     margin: 0px auto;
     padding-top: ${props => props.paddingTop || "70px"};
+    @media (max-width: 1280px) {
+        max-width: 980px;
+    }
     .Benefits__flex-grid {
         display: flex;
         flex-wrap: wrap;
@@ -19,6 +22,9 @@ export const SectionWrapper = styled.div`
             max-width: 200px;
             width: 100%;
             text-align: center;
+            @media (max-width: 1280px) {
+                max-width: 175px;
+            }
             .Benefits__text-wrapper {
                 font-size: 18px;
                 font-weight: bold;

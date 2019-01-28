@@ -38,6 +38,10 @@ export const StyledHeader = styled.div`
         margin: 0px auto;
         text-align: left;
         padding-top: 143px;
+        @media (max-width: 1280px) {
+          max-width: 960px;
+          padding-top: 110px;
+        }
         .WhiteLabel__page-name {
             font-size: 18px;
             font-weight: 500;

@@ -20,11 +20,18 @@ export const StyledHomeFaqWrapper = styled.div`
         letter-spacing: 0.5px;
         text-align: center;
         color: #1f1f1f;
+        @media (max-width: 1280px) {
+            max-width: 850px;
+        }
     }
     .HomeFAQ__accordion {
         width: 100%;
         max-width: 934px;
         margin: 0px auto;
+        @media (max-width: 1280px) {
+            padding: 0px 24px;
+            max-width: 860px;
+        }
         .HomeFAQ__view-change-wrapper {
             width: 100%;
             text-align: center;

@@ -35,6 +35,10 @@ export const HomeHeaderWrapper = styled.div`
         max-width: 1280px;
         margin: 0px auto;
         padding-top: 288px;
+        @media (max-width: 1280px) {
+            max-width: 980px;
+            padding-top: 220px;
+        }
         .HomeHeader__title {
             margin: 0 auto;
             max-width: 930px;

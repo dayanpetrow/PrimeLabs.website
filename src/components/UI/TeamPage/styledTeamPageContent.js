@@ -9,13 +9,16 @@ export const StyledTeamPageContentWrapper = styled.div`
     background-repeat: no-repeat;
     background-position: center 34%;
     padding-top: 108px;
+    @media (max-width: 1280px) {
+        max-width: 960px;
+    }
 `
 
 export const StyledTeamGrid = styled.div`
     margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     .TeamGrid__item {
         padding: 15px 0;
         margin: 40px 20px 40px 20px;
@@ -29,6 +32,10 @@ export const StyledTeamGrid = styled.div`
         justify-content: center;
         align-items: center;
         border-radius: 15px;
+        @media (max-width: 1280px) {
+            max-width: 300px;
+            margin: 30px 10px;
+        }
         &:hover {
             transition: all 0.5s ease;
             box-shadow: 0 7px 25px 0 rgba(49, 114, 253, 0.2);
@@ -106,10 +113,17 @@ export const StyledTeamText = styled.div`
     width: 100%;
     max-width: 1238px;
     margin: 0 auto;
+    @media (max-width: 1280px) {
+        max-width: 960px;
+    }
     .TeamPage__text-wrapper {
         width: 100%;
         max-width: 1001px;
         margin: 58px auto 50px auto;
+        @media (max-width: 1280px) {
+            max-width: 900px;
+            text-align: center;
+        }
         > .TeamPage__paragraph {
             font-size: 16px;
             font-weight: normal;

@@ -14,6 +14,9 @@ export const StyledHomePartnersWrapper = styled.div`
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
+        @media (max-width: 1280px) {
+            max-width: 980px;
+        }
         .HomePartners__partner {
             display: flex;
             flex: 1;

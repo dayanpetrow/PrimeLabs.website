@@ -18,6 +18,7 @@ export const StyledNavigation = styled.div`
             margin: 0px auto;
             @media (max-width: 1280px) {
                 padding: 0px 24px;
+                max-width: 980px;
             }
             .Header__logo {
                 display: flex;
@@ -28,6 +29,9 @@ export const StyledNavigation = styled.div`
                 max-width: 1030px;
                 margin-left: auto;
                 margin-right: 75px;
+                @media (max-width: 1280px) {
+                    margin: 0px auto;
+                }
                 @media (max-width: 1000px) {
                     display: none;
                 }
@@ -76,6 +80,9 @@ export const StyledNavigation = styled.div`
                                 visibility: visible;
                                 -webkit-transform: scaleX(1);
                                 transform: scaleX(1);
+                            }
+                            @media (max-width: 1280px) {
+                                font-size: 14px;
                             }
                         }
                     }

@@ -6,6 +6,9 @@ export const StyledOurWorkWithScrollWrapper = styled.div`
     width: 100%;
     max-width: 1238px;
     margin: 0px auto;
+    @media (max-width: 1280px) {
+        max-width: 980px;
+    }
     .OurWorkWithScroll {
         width: 100%;
         max-width: 1238px;
@@ -13,6 +16,10 @@ export const StyledOurWorkWithScrollWrapper = styled.div`
         overflow-x: scroll;
         display: flex;
         padding: 40px 0px;
+        justify-content: flex-start;
+        @media (max-width: 1280px) {
+            max-width: 980px;
+        }
         &::-webkit-scrollbar {
             padding: 0px 60px;
             height: 10px;
@@ -42,13 +49,25 @@ export const StyledOurWorkWithScrollWrapper = styled.div`
                 position: relative;
                 height: 487px;
                 width: 571px;
+                @media (max-width: 1280px) {
+                    width: 432px;
+                    height: 350px;
+                }
                 .OurWorkWithScroll__item__image {
                     position: absolute;
                     top: 45px;
                     left: 60px;
+                    @media (max-width: 1280px) {
+                        top: 35px;
+                        left: 50px;
+                    }
                     > img {
                         max-width: 450px;
                         max-height: 254px;
+                        @media (max-width: 1280px) {
+                            max-width: 330px;
+                            max-height: 200px;
+                        }
                     }
                 }
                 .OurWorkWithScroll__item__title {
@@ -63,11 +82,20 @@ export const StyledOurWorkWithScrollWrapper = styled.div`
                     line-height: 1.13;
                     letter-spacing: 0.7px;
                     color: #000000;
+                    @media (max-width: 1280px) {
+                        max-width: 400px;
+                        top: 230px;
+                        left: 50px;
+                    }
                 }
                 .OurWorkWithScroll__item__more {
                     position: absolute;
                     bottom: 55px;
                     left: 60px;
+                    @media (max-width: 1280px) {
+                        bottom: 25px;
+                        left: 50px;
+                    }
                     > a {
                         opacity: 0.5;
                         font-size: 14px;

@@ -9,6 +9,8 @@ export const StyledHomeReviewsWrapper = styled.div`
     background-repeat: no-repeat;
     background-size: fixed;
     background-position: center bottom;
+    @media (max-width: 1280px) {        max-width: 980px;
+    }
     .HomeReviews__Carousel-wrapper {
         .ant-carousel .slick-slide {
             width: 100%;
@@ -17,6 +19,9 @@ export const StyledHomeReviewsWrapper = styled.div`
             background: none;
             overflow: hidden;
             padding-top: 80px;
+            @media (max-width: 1280px) {
+                max-width: 980px;
+            }
             .Carousel__Slide-wrapper {
                 .Carousel__Slide-flex {
                     width: 100%;
