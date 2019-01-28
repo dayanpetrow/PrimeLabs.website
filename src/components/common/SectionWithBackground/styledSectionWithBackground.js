@@ -32,14 +32,14 @@ export const RightOvalBackground = styled.div`
     position: relative;
     width: 100%;
     padding-top: 40px;
-    @media (max-width: 800px) {
-        display: none;
-    }
     .Oval {
         position: absolute;
         right: 0px;
         top: ${props => props.top || "-450px"};
-        z-index: -3;  
+        z-index: -3; 
+        @media (max-width: 800px) {
+            display: none;
+        }
     }
 `
 

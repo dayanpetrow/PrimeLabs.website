@@ -8,6 +8,7 @@ export const StyledOurWorkWithScrollWrapper = styled.div`
     margin: 0px auto;
     @media (max-width: 1280px) {
         max-width: 980px;
+        padding: 0px 30px;
     }
     @media (max-width: 800px) {
         display: none;
@@ -53,7 +54,7 @@ export const StyledOurWorkWithScrollWrapper = styled.div`
                 height: 487px;
                 width: 571px;
                 @media (max-width: 1280px) {
-                    width: 432px;
+                    width: 415px;
                     height: 350px;
                 }
                 .OurWorkWithScroll__item__image {
