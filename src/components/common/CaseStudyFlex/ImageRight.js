@@ -27,8 +27,13 @@ export const FlexImageRight = styled.div`
         line-height: 1.44;
         letter-spacing: 0.5px;
         color: #1f1f1f;
+        @media (max-width: 900px) {
+            text-align: center;
+            padding: 0px 30px;
+        }
         &-list {
             margin-bottom: 15px;
+            text-align: left;
             &-item {
                 position: relative;
                 padding-left: 20px;
@@ -53,6 +58,10 @@ export const FlexImageRight = styled.div`
     }
     .CaseStudyFlex__image {
         flex: 0 1 ${props => props.maxWidthImage};
+        @media (max-width: 900px) {
+            text-align: center;
+            padding: 0px 30px;
+        }
         > img {
             width: 100%;
             max-width: ${props => props.maxWidthImage};

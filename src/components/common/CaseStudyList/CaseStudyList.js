@@ -5,6 +5,9 @@ export const CaseStudyList = styled.div`
     max-width: 1101px;
     margin: 0px auto;
     margin-bottom: 15px;
+    @media (max-width: 1280px) {
+        padding-left: 30px;
+    }
     .CaseStudyList__item {
         font-size: 16px;
         font-weight: normal;

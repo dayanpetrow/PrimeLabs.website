@@ -13,6 +13,11 @@ const StyledImageWrapper = styled.div`
         max-width: ${props => props.maxWidth};
         margin: ${props => props.margin || "64px 0px"};
         padding: ${props => props.padding};
+        @media (max-width: ${props => props.maxWidth}) {
+            width: 100%;
+            padding: 15px;
+            margin: 15px 0px;
+        }
     }
 `
 

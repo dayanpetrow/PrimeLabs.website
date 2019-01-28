@@ -60,6 +60,7 @@ export const StyledHeader = styled.div`
         @media (max-width: 960px) {
           text-align: center;
           width: 80%;
+          padding-left: 0px;
         }
         .BlockchainDev__page-name {
             font-size: 18px;

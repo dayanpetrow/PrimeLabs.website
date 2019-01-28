@@ -24,7 +24,7 @@ const opacityAnimation = keyframes`
 export const HomeHeaderWrapper = styled.div`
     height: 80vh;
     max-height: 763px;
-    min-height: 480px;
+    min-height: 520px;
     width: 100%;
     background-image: url(${HeaderCover});
     background-repeat: no-repeat;
@@ -39,6 +39,10 @@ export const HomeHeaderWrapper = styled.div`
             max-width: 980px;
             padding-top: 220px;
         }
+        @media (max-width: 800px) {
+          max-width: 980px;
+          padding-top: 170px;
+      }
         .HomeHeader__title {
             margin: 0 auto;
             max-width: 930px;
@@ -52,6 +56,10 @@ export const HomeHeaderWrapper = styled.div`
             text-align: center;
             color: #1f1f1f;
             animation: ${scaleAnimation} 1s;
+            @media (max-width: 780px) {
+              font-size: 32px;
+              width: 80%;
+            }
         }
         .HomeHeader__subtitle {
             margin: 0 auto;
@@ -68,6 +76,9 @@ export const HomeHeaderWrapper = styled.div`
             text-align: center;
             color: #1f1f1f;
             animation: ${opacityAnimation} 1.5s ease-in;
+            @media (max-width: 780px) {
+              width: 80%;
+            }
         }
     }
 `

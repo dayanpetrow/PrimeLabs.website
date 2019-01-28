@@ -26,12 +26,18 @@ const translateRightAnimation = keyframes`
 
 export const StyledHeader = styled.div`
     height: 80vh;
-    min-height: 480px;
+    min-height: 607px;
+    max-height: 700px;
     width: 100%;
     background-image: url(${HeaderCover});
     background-repeat: no-repeat;
     background-size: cover;
     background-position:  center center;
+    @media (max-width: 900px) {
+      height: 100%;
+      max-height: 100%;
+      padding-bottom: 50px;
+    }
     .WhiteLabel__header-content-wrapper {
         width: 100%;
         max-width: 1238px;
@@ -40,6 +46,12 @@ export const StyledHeader = styled.div`
         padding-top: 143px;
         @media (max-width: 1280px) {
           max-width: 980px;
+          padding-left: 30px;
+        }
+        @media (max-width: 960px) {
+          text-align: center;
+          width: 80%;
+          padding-left: 0px;
         }
         .WhiteLabel__page-name {
             font-size: 18px;
@@ -63,6 +75,9 @@ export const StyledHeader = styled.div`
             color: #1f1f1f;
             text-transform: uppercase;
             animation: ${translateRightAnimation} 0.5s ease-in;
+            @media (max-width: 980px) {
+              font-size: 32px;
+            }
         }
         .WhiteLabel__page-description {
             max-width: 614px;
@@ -76,6 +91,12 @@ export const StyledHeader = styled.div`
             color: #1f1f1f;
             margin: 15px 0px;
             animation: ${translateRightAnimation} 0.5s ease-in;
+            @media (max-width: 960px) {
+              text-align: center;
+              width: 100%;
+              max-width: 100%;
+              padding: 0px 30px;
+            }
         }
     }
 `

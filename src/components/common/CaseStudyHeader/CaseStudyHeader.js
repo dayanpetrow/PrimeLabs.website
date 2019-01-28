@@ -34,6 +34,20 @@ const CaseStudyHeader = ({ data, history }) => (
             </StyledPositionWrapper>
         </StyledCaseStudyHeader>
         <StyledHeaderDescriptions>
+            <div className="HeaderMobile__button">
+                <div className="HeaderCS__button">
+                    <PrimeButton 
+                        theme={buttonThemes.blue} 
+                        onClick={() => { history.push(data.buttonUrl) }}
+                        width={"160px"} 
+                        >
+                        {data.buttonText}
+                    </PrimeButton>
+                </div>
+            </div>
+            <div className="HeaderMobile__title">
+                {data.title}
+            </div>
             {(data.descriptions).map((element,index) => {
                 const item = Array.isArray(element);
                 return !item ? (

@@ -7,6 +7,10 @@ export const StyledSummaryWrapper = styled.div`
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
+    @media (max-width: 900px) {
+        padding: 20px;
+        margin-bottom: 50px;
+    }
     .SummaryRow {
         display: flex;
         flex-direction: row;
@@ -25,6 +29,12 @@ export const StyledSummaryWrapper = styled.div`
             line-height: normal;
             letter-spacing: 0.5px;
             color: #1f1f1f;
+            @media (max-width: 850px) {
+                flex: 0 0 auto;
+                text-align: center;
+                width: 100%;
+                padding: 0px 30px;
+            }
         }
         &__content {
             flex: 1 1;
@@ -36,6 +46,13 @@ export const StyledSummaryWrapper = styled.div`
             line-height: normal;
             letter-spacing: 0.5px;
             color: #1f1f1f;
+            @media (max-width: 850px) {
+                flex: 0 0 auto;
+                text-align: center;
+                width: 80%;
+                min-width: 300px;
+                padding: 10px 30px 0px 30px;
+            }
         }
     }
 `
