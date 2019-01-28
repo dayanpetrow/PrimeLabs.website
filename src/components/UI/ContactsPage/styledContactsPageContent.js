@@ -17,6 +17,16 @@ export const StyledContactsPageContentWrapper = styled.div`
     @media (max-width: 1280px) {
         max-width: 960px;
     }
+    .ContactsPage__error-message {
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.44;
+        letter-spacing: 0.5px;
+        color: #e47f8c;
+        padding-left: 20px;
+    }
     .ContactsPage__flex {
         display: flex;
         flex-wrap: wrap;
@@ -72,6 +82,9 @@ export const StyledInput = styled(Input)`
         letter-spacing: 0.5px;
         color: #8f8f8f;
     }
+    &.error {
+        border: 1px solid #d0021b;
+    }
 `
 
 export const StyledSelect = styled(Select)`
@@ -85,6 +98,11 @@ export const StyledSelect = styled(Select)`
         color: #1f1f1f;
         &:focus {
             border: 1px solid #00a0df;
+        }
+    }
+    &.error {
+        > div {
+            border: 1px solid #d0021b;
         }
     }
     .ant-select-selection-selected-value {
@@ -114,6 +132,9 @@ export const StyledTextArea = styled(TextArea)`
     padding: 10px 20px!important;
     border: 1px solid #00a0df;
     color: #1f1f1f;
+    &.error {
+        border: 1px solid #d0021b;
+    }
     &:focus {
         border: 1px solid #00a0df;
     }

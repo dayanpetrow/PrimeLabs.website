@@ -29,7 +29,10 @@ export const StyledFooter = styled.div`
                 align-self: center;
                 max-width: 200px;
                 align-items: right;
-                padding-left: 24px;
+                padding-right: 24px;
+                @media (max-width: 1280px) {
+                    padding-right: 24px;
+                }
                 .Footer__flex-grid__icon {
                     width: 32px;
                     height: 32px;

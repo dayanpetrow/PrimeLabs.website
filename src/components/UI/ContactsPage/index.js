@@ -18,11 +18,12 @@ const ContactsPageContent = () => (
                 <img src={ContactsPageImage} alt="Contact us" />
             </div>
             <div className="ContactsPage__flex--right-column">
-                <StyledInput placeholder="Full name" />
+                <StyledInput placeholder="Full name" className="error" />
+                <div className="ContactsPage__error-message">This is an error message</div>
                 <StyledInput placeholder="Email" />
                 <StyledInput placeholder="Company" />
                 <StyledInput placeholder="Headquarters country" />
-                <StyledSelect placeholder="PrimeLabs Solution">
+                <StyledSelect placeholder="PrimeLabs Solution" className="error">
                     <StyledOption value="jack">option 1</StyledOption>
                     <StyledOption value="lucy">option 2</StyledOption>
                 </StyledSelect>
@@ -30,7 +31,7 @@ const ContactsPageContent = () => (
                     <StyledOption value="jack">option 1</StyledOption>
                     <StyledOption value="lucy">option 2</StyledOption>
                 </StyledSelect>
-                <StyledTextArea placeholder="Write your question" />
+                <StyledTextArea placeholder="Write your question" className="error" />
                 <div className="ContactsPage__button-container">
                     <PrimeButton 
                         theme={buttonThemes.blueSolid} 

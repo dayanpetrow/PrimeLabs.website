@@ -2,7 +2,7 @@ import React from 'react';
 import { StyledHomeReviewsWrapper } from './styledHomeReviews'
 import { SectionTitle } from '../../common/';
 import Carousel from 'antd/lib/carousel'
-import dayan from '../../../images/team/dayan.jpg'
+import dayan from '../../../images/team/defaultMemberPhoto.png'
 import SlideLeftButton from '../../../images/svgs/carouselArrowLeft.svg';
 import SlideRightButton from '../../../images/svgs/carouselArrowRight.svg';
 
