@@ -9,21 +9,21 @@ import { PrimeButton, buttonThemes } from '../../common/'
 const menu = (
     <Menu>
       <Menu.Item key="0">
-        <Link to={'/services/white-label'}>White-label Exchange</Link>
+        <Link to={'/services/white-label-exchange'}>White Label Exchange</Link>
       </Menu.Item>
       <Menu.Item key="1">
         <Link to={'/services/blockchain-development'}>Blockchain Development</Link>
       </Menu.Item>
       <Menu.Item key="2">
-        <Link to={'/services/initial-token-offering'}>Initial Token Offering</Link>
+        <Link to={'/services/security-token-offering'}>Security Token Offering</Link>
       </Menu.Item>
     </Menu>
   );
 
 const Navigation = (props) => {
     const servicesClass = (
-        props.location.pathname === "/services/white-label" || 
-        props.location.pathname === "/services/initial-token-offering" || 
+        props.location.pathname === "/services/white-label-exchange" || 
+        props.location.pathname === "/services/security-token-offering" || 
         props.location.pathname === "/services/blockchain-development" 
         ) ? "Navigaton__link active" : "Navigaton__link";
     return (
@@ -31,7 +31,7 @@ const Navigation = (props) => {
             <div id="NavigationWrapper">
                 <div className="Navigation__container">
                     <div className="Header__logo">
-                        <a href="/"><img src={PrimeLabsLogo} alt="PrimeLabs Logo" /></a>
+                        <Link to="/"><img src={PrimeLabsLogo} alt="PrimeLabs Logo" /></Link>
                     </div>
                     <div className="Header__navigation">
                         <ul className="Header__navigation-list">

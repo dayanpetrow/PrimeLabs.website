@@ -14,9 +14,16 @@ import CFDCentered from '../../images/case_study_pages/CFD/cfd_content@3x.png';
 /* backgrounds */
 import SectionBackgroundTrees from '../../images/svgs/section_background_trees.png';
 import OvalBackgroundRight from '../../images/svgs/rightOval.svg';
+import { Helmet } from "react-helmet";
+
+const PAGE_TITLE = "PrimeLabs - CFD Trading Platform";
 
 const CFDPage = () => (
     <React.Fragment>
+        <Helmet>
+            <title>{PAGE_TITLE}</title>
+        </Helmet>
+        
         <CaseStudyHeader data={HeaderData} />
 
         <SectionTitle

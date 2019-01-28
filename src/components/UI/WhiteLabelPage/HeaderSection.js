@@ -8,7 +8,7 @@ const HeaderSection = () => (
                 Services
             </div>
             <div className="WhiteLabel__page-title">
-                White-label Exchange Solutions
+                White Label Exchange Solution
             </div>
             <div className="WhiteLabel__page-description">
                 Software solution to run a digital asset exchange or cryptocurrency 

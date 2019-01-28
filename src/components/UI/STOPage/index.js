@@ -1,13 +1,13 @@
 import React from 'react';
 import { StyledContentWrapper, HowItWorksCardWrapper } from './styledContentWrapper';
-import { SectionTitle, SectionWithBackground } from '../../common';
+import { SectionTitle, SectionWithBackground, OurWorkWithScroll } from '../../common';
 import HowItWorksGraphic from '../../../images/ico/howItWorksGraphic.svg';
 import BenefitsImage from '../../../images/svgs/tickCircleIcon.svg';
 import SectionBackgroundTrees from '../../../images/svgs/section_background_trees.png';
 
 const IcoContent = () => (
     <React.Fragment>
-        <SectionTitle shadowText={"Initial token offering"} mainText={"How it works"} marginTop={"80px"} />
+        <SectionTitle shadowText={"Security token offering"} mainText={"How it works"} marginTop={"80px"} />
         <SectionWithBackground
             background={SectionBackgroundTrees}
             backgroundPosition="center top"
@@ -15,9 +15,12 @@ const IcoContent = () => (
         >
             <StyledContentWrapper>
                 <HowItWorksSection />
-                <SectionTitle shadowText={"Initial token offering"} mainText={"Benefits"} marginTop={"120px"} />
+                <SectionTitle shadowText={"Security token offering"} mainText={"Benefits"} marginTop={"120px"} />
                 <BenefitsSection />
             </StyledContentWrapper>
+
+            <OurWorkWithScroll />
+            
         </SectionWithBackground>
     </React.Fragment>
 )

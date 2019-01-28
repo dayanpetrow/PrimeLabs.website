@@ -31,14 +31,14 @@ const BlockchainDevPageContent = () => (
             background={SectionBackgroundTrees}
             backgroundPosition="center top"
         >
-            <SectionTitle shadowText={"Our experience"} mainText={"Portfolio"} />
+            <SectionTitle shadowText={"ETHEREUM NETWORK"} mainText={"Portfolio"} />
 
             <PortfolioSection />
             <PrimeWalletSection />
 
             <RightOvalBackground top={"-600px"}>
                 <img className="Oval" src={OvalBackgroundRight} alt="Oval Background" />
-                <OurWorkWithScroll />
+                <OurWorkWithScroll sectionTitle={"Our portfolio"} />
             </RightOvalBackground>
 
         </SectionWithBackground>

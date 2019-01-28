@@ -14,9 +14,15 @@ import RaiffeisenPageScreens from '../../images/case_study_pages/Raiffeisen/scre
 /* backgrounds */
 import SectionBackgroundTrees from '../../images/svgs/section_background_trees.png';
 import OvalBackgroundRight from '../../images/svgs/rightOval.svg';
+import { Helmet } from "react-helmet";
+
+const PAGE_TITLE = "PrimeLabs - Creating a secure way for storying crypto";
 
 const RaiffeisenPage = () => (
     <React.Fragment>
+        <Helmet>
+            <title>{PAGE_TITLE}</title>
+        </Helmet>
         <CaseStudyHeader data={HeaderData} />
 
         <SectionTitle

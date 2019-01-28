@@ -73,7 +73,6 @@ export const StyledTeamGrid = styled.div`
             justify-content: center;
             .TeamGrid__item__Linkedin {
                 margin-left: 5px;
-                transform: translateY(3px);
                 a >
                     > img {
                         height: 18px;

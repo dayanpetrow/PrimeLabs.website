@@ -16,9 +16,16 @@ import AidoinicSided from '../../images/case_study_pages/AIDONIC/page@2x.png';
 /* backgrounds */
 import SectionBackgroundTrees from '../../images/svgs/section_background_trees.png';
 import OvalBackgroundRight from '../../images/svgs/rightOval.svg';
+import { Helmet } from "react-helmet";
+
+const PAGE_TITLE = "PrimeLabs - INNO4 GOOD: Transparent Donations";
 
 const AidonicPage = () => (
     <React.Fragment>
+        <Helmet>
+            <title>{PAGE_TITLE}</title>
+        </Helmet>
+        
         <CaseStudyHeader data={HeaderData} />
 
         <SectionTitle

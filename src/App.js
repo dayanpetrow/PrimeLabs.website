@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from "react-router-dom";
+import { withRouter } from 'react-router';
 import allRoutes from './routes/allRoutes'
 import { Footer, Navigation, MobileNavigation } from './components/common/'
 
@@ -7,6 +8,12 @@ class App extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.location !== prevProps.location) {
+      window.scrollTo(0,0);
+    }
   }
 
   componentWillUnmount() {
@@ -55,4 +62,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withRouter(App);

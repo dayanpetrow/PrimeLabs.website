@@ -58,5 +58,24 @@ export const StyledFooter = styled.div`
             opacity: 0.1;
             margin: 20px 0px 34px 0px;
         }
+        .Footer__PrimeHolding {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.44;
+            letter-spacing: 0.5px;
+            color: #1f1f1f;
+            > span {
+                > a > img {
+                    margin-left: 10px;
+                    width: 75px;
+                }
+            }
+        }
     }
 `

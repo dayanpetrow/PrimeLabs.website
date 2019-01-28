@@ -17,7 +17,8 @@ const HomeServicesSection = (props) => (
         <SectionTitle mainText={"Our Services"} shadowText={"What we do"} />
         <div className="HomeServices__flex-grid">
 
-            <div className="HomeServices__flex-grid__column" tabIndex="1">
+            <div className="HomeServices__flex-grid__column" tabIndex="1" 
+             onClick={() => { props.history.push('/services/white-label-exchange') }}>
                 <div className="HomeServices__image--white-label">
                     <img src={WhiteLabelImage} alt="White-Label Exchange" />
                 </div>
@@ -36,17 +37,19 @@ const HomeServicesSection = (props) => (
                     </div>
                 </div>
                 <div className="HomeServices__button-wrapper">
-                     <PrimeButton 
+                    <PrimeButton 
                         theme={buttonThemes.blueSolid} 
-                        onClick={() => { props.history.push('/services/white-label') }}
+                        onClick={() => { props.history.push('/services/white-label-exchange') }}
                         width={"175px"} 
                     >
                         Learn more
                     </PrimeButton>
                 </div>
             </div>
+            
 
-            <div className="HomeServices__flex-grid__column" tabIndex="1">
+            <div className="HomeServices__flex-grid__column" tabIndex="1"
+                onClick={() => { props.history.push('/services/blockchain-development') }} >
                 <div className="HomeServices__image--blockchain">
                     <img src={BlockchainDevelopment} alt="White-Label Exchange" />
                 </div>
@@ -75,7 +78,8 @@ const HomeServicesSection = (props) => (
                 </div>
             </div>
 
-            <div className="HomeServices__flex-grid__column" tabIndex="1">
+            <div className="HomeServices__flex-grid__column" tabIndex="1"
+                onClick={() => { props.history.push('/services/security-token-offering') }} >
                 <div className="HomeServices__image--ico">
                     <img src={ICO} alt="White-Label Exchange" />
                 </div>
@@ -96,7 +100,7 @@ const HomeServicesSection = (props) => (
                 <div className="HomeServices__button-wrapper">
                     <PrimeButton 
                         theme={buttonThemes.blueSolid} 
-                        onClick={() => { props.history.push('/services/initial-token-offering') }}
+                        onClick={() => { props.history.push('/services/security-token-offering') }}
                         width={"175px"} 
                     >
                         Learn more

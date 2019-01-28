@@ -2,7 +2,7 @@ import React from 'react';
 import { SectionTitle } from '../components/common'
 import { Helmet } from "react-helmet";
 
-const PAGE_TITLE = "not found custom title";
+const PAGE_TITLE = "PrimeLabs - Page not found";
 
 const CaseStudiesPage = () => (
     <div style={{paddingTop: "108px"}}>

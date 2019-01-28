@@ -14,9 +14,15 @@ import AdnaCentered from '../../images/case_study_pages/ADNA/adna-2@3x.png';
 /* backgrounds */
 import SectionBackgroundTrees from '../../images/svgs/section_background_trees.png';
 import OvalBackgroundRight from '../../images/svgs/rightOval.svg';
+import { Helmet } from "react-helmet";
+
+const PAGE_TITLE = "PrimeLabs - A.DNA: Advanced Company DNA";
 
 const AdnaPage = () => (
     <React.Fragment>
+        <Helmet>
+            <title>{PAGE_TITLE}</title>
+        </Helmet>
         <CaseStudyHeader data={HeaderData} />
 
         <SectionTitle

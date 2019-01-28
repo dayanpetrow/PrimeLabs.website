@@ -12,9 +12,15 @@ import MyBitHeader from '../../images/case_study_pages/MyBit/header@3x.jpg';
 import MyBitCentered from '../../images/case_study_pages/MyBit/mybit@3x.png';
 /* backgrounds */
 import SectionBackgroundTrees from '../../images/svgs/section_background_trees.png';
+import { Helmet } from "react-helmet";
+
+const PAGE_TITLE = "PrimeLabs - Decentralised wealth management SDK";
 
 const MyBitPage = () => (
     <React.Fragment>
+        <Helmet>
+            <title>{PAGE_TITLE}</title>
+        </Helmet>
         <CaseStudyHeader data={HeaderData} />
 
         <SectionTitle

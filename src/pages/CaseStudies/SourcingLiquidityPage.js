@@ -14,9 +14,15 @@ import SLScreens from '../../images/case_study_pages/SourcingLiquidity/screens@3
 /* backgrounds */
 import SectionBackgroundTrees from '../../images/svgs/section_background_trees.png';
 import OvalBackgroundRight from '../../images/svgs/rightOval.svg';
+import { Helmet } from "react-helmet";
+
+const PAGE_TITLE = "PrimeLabs - Sourcing liquidity on demand";
 
 const SourcingLiquidityPage = () => (
     <React.Fragment>
+        <Helmet>
+            <title>{PAGE_TITLE}</title>
+        </Helmet>
         <CaseStudyHeader data={HeaderData} />
 
         <SectionTitle

@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyledFooter } from './styledFooter'
 import Linkedin from '../../../images/svgs/linked-in.svg'
-import Telegram from '../../../images/svgs/telegram.svg'
+import PrimeHolding from '../../../images/svgs/primeHolding.png'
 
 
 const Footer = () => (
@@ -15,13 +15,17 @@ const Footer = () => (
                     <a href="http://google.com">
                         <img src={Linkedin} alt="PrimeLabs on Linkedin" className="Footer__flex-grid__icon" />
                     </a>
-                    <a href="http://google.com">
-                        <img src={Telegram} alt="PrimeLabs on Telegram" className="Footer__flex-grid__icon" />
-                    </a>
                 </div>
             </div>
             <hr className="Footer__separator" />
-            
+            <div className="Footer__PrimeHolding">
+                PrimeLabs is part of 
+                <span>
+                    <a href="http://primeholding.com" target="_blank" rel="noopener noreferrer">
+                        <img src={PrimeHolding} alt="Prime Holding" />
+                    </a>
+                </span>
+            </div>
         </div>
     </StyledFooter>
 )

@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { StyledOurWorkWithScrollWrapper } from './styledOurWorkWithScroll';
 import CaseStudies from '../../../constants/caseStudies';
 import { SectionTitle } from '../../common/';
 import Icon from 'antd/lib/icon';
 //import ReadMoreArrow from '../../../images/svgs/readmoreArrow.svg';
 
-const OurWorkWithScroll = () => (
+const OurWorkWithScroll = ({sectionTitle = "Our work"}) => (
     <StyledOurWorkWithScrollWrapper>
-        <SectionTitle shadowText={"Case studies"} mainText={"Our work"} uppercase={true} />
+        <SectionTitle shadowText={"Case studies"} mainText={sectionTitle} uppercase={false} />
         <div className="OurWorkWithScroll">
             {
                 CaseStudies.map((caseStudy, index) => {
@@ -21,10 +22,10 @@ const OurWorkWithScroll = () => (
                                     {caseStudy.title}
                                 </div>
                                 <div className="OurWorkWithScroll__item__more">
-                                    <a href={caseStudy.url}>
+                                    <Link to={caseStudy.url}>
                                         Read more 
                                         <span><Icon type="caret-right" /></span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

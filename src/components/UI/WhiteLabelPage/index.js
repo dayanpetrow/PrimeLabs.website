@@ -5,13 +5,14 @@ import ExchangeSolutions from '../../../images/white_label/exchange_solutions.pn
 import SectionBackgroundTrees from '../../../images/svgs/section_background_trees.png';
 import PrimeWalletImage from '../../../images/white_label/prime_wallet_image.png';
 import ExchangeOfficeImage from '../../../images/white_label/exchange_office_image.png';
+import APIsImage from '../../../images/white_label/apis.png';
 import OvalBackgroundRight from '../../../images/svgs/rightOval.svg';
 import BenefitsImage from '../../../images/svgs/tickCircleIcon.svg';
 
 const WhiteLabelPageContent = () => (
     <StyledWhiteLabelPageContent>
         {/* EXCHANGE SOLUTIONS SECTION */}
-        <SectionTitle shadowText="Exchange solutions" mainText="Our work" />
+        <SectionTitle shadowText="Exchange solution" mainText="Platform Components" />
         <ExchangeSolutionsSection />
 
         {/* PRIME WALLET & EXCHANGE BACK OFFICE */}
@@ -22,17 +23,68 @@ const WhiteLabelPageContent = () => (
             <div className="SecondBackground" />
             <PrimeWalletSection />
             <ExchangeBackOfficeSection />
+            <APISection />
 
             {/* BENEFITS */}
             <RightOvalBackground>
                 <img className="Oval" src={OvalBackgroundRight} alt="Oval Background" />
-                <SectionTitle shadowText="Exchange solutions" mainText="Benefits" uppercase={true} />
+                <SectionTitle shadowText="Additional Value" mainText="Benefits" uppercase={false} />
                 <BenefitsSection />
             </RightOvalBackground>
             <OurWorkWithScroll />
         </SectionWithBackground>
     </StyledWhiteLabelPageContent>
 )
+
+const APISection = () => {
+    const SectionListContent = [
+        "Swagger access to API",
+        "Account management and onboarding",
+        "KYC features and wallets management",
+        "Trading of assets for Market and Limit Orders",
+        "Trading history, Order book",
+        "Dictionary of topics",
+        "Real-time price data, candles data, trade data"
+    ]
+    const SectionConfig = {
+        leftColumnSize: "513",
+        rightColumnSize: "525",
+        textSize: "453",
+        sectionBottomMargin: "80",
+        imageSize: "496",
+        imageMarginTop: "150"
+    }
+    return (
+        <SectionWrapper>
+            <StyledFlexSection config={SectionConfig}>
+                <div className="FlexSection__left-column">
+                    <div className="FlexSection__text-wrapper">
+                        <div className="FlexSection__title">
+                            API
+                        </div>
+                        <div className="FlexSection__description">
+                            APIs are the backbone of the Exchange. Web Wallet, Web Trading 
+                            Terminal and Mobile Wallets use the APIs to interface with the 
+                            exchange.
+                        </div>
+                        <div className="FlexSection__list">
+                            {SectionListContent.map((listItem, index) => (
+                                <div className="FlexSection__list__item" key={index}>
+                                    {listItem}
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+                <div className="FlexSection__right-column">
+                    <div className="FlexSection__image-wrapper">
+                        <img src={APIsImage} alt="Prime Wallets" />
+                    </div>
+                </div>
+            </StyledFlexSection>
+        </SectionWrapper>
+    )
+}
 
 const ExchangeSolutionsSection = () => {
     const SectionListContent = [
@@ -90,7 +142,7 @@ const PrimeWalletSection = () => {
     ]
     const SectionConfig = {
         leftColumnSize: "513",
-        rightColumnSize: "725",
+        rightColumnSize: "640",
         textSize: "453",
         sectionBottomMargin: "80",
         imageSize: "520"
@@ -101,7 +153,7 @@ const PrimeWalletSection = () => {
                 <div className="FlexSection__left-column">
                     <div className="FlexSection__text-wrapper">
                         <div className="FlexSection__title">
-                            Prime Wallets
+                            DIGITAL WALLETS
                         </div>
                         <div className="FlexSection__description">
                             Mobile applications for iOS and Android that enable
@@ -156,7 +208,7 @@ const ExchangeBackOfficeSection = () => {
                 <div className="FlexSection__right-column">
                     <div className="FlexSection__text-wrapper">
                         <div className="FlexSection__title">
-                            Exchange Back Office
+                            Back Office
                         </div>
                         <div className="FlexSection__description">
                             Web portal for management of all exchange operations. 

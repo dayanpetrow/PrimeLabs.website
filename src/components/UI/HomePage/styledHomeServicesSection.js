@@ -11,6 +11,7 @@ export const StyledHomeServicesWrapper = styled.div`
         justify-content: space-evenly;
         padding: 0px 10px 0px 10px;
         &__column {
+            cursor: pointer;
             min-width: 300px;
             max-width: 378px;
             min-height: 430px;

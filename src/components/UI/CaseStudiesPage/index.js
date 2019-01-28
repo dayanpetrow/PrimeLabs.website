@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { StyledCaseStudyGridWrapper, ContentWrapper } from './styledCaseStudyGrid';
 import CaseStudies from '../../../constants/caseStudies';
 import { SectionTitle, SectionWithBackground, } from '../../common/';
@@ -26,10 +27,10 @@ const CaseStudyGrid = () => (
                                             {caseStudy.title}
                                         </div>
                                         <div className="CaseStudyCard__more">
-                                            <a href={caseStudy.url}>
+                                            <Link to={caseStudy.url}>
                                                 Read more 
                                                 <span><Icon type="caret-right" /></span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

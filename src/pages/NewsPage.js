@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import NewsPageContent from '../components/UI/NewsPage'
 import dummyNews from '../components/UI/NewsPage/dummyNews';
 
-const PAGE_TITLE = "news custom title";
+const PAGE_TITLE = "PrimeLabs - News";
 
 class NewsPage extends React.Component {
     state = {

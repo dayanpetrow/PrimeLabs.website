@@ -53,7 +53,7 @@ export default [
     },
     {
         img: SourcingLiquidity,
-        title: "Sourcing liquidity on demand ",
+        title: "Sourcing liquidity on demand",
         url: "/case-studies/sourcing-liquidity",
     },
     {

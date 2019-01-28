@@ -17,9 +17,15 @@ import SmartValorGroupedScreens from '../../images/case_study_pages/SmartValor/g
 import SmartValorPresales from '../../images/case_study_pages/SmartValor/presales@3x.png';
 /* backgrounds */
 import SectionBackgroundTrees from '../../images/svgs/section_background_trees.png';
+import { Helmet } from "react-helmet";
+
+const PAGE_TITLE = "PrimeLabs - Disrupting the financial markets, one block at a time";
 
 const SmartValorPage = () => (
     <React.Fragment>
+        <Helmet>
+            <title>{PAGE_TITLE}</title>
+        </Helmet>
         <CaseStudyHeader data={HeaderData} />
 
         <SectionTitle

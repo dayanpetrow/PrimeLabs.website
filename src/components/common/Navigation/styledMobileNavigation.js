@@ -69,7 +69,7 @@ export const StyledMobileNavigation = styled.div`
       &__services {
         height: 0;
         overflow: hidden;
-        > a {
+        > button {
           font-size: 16px;
           line-height: 1.8;
         }

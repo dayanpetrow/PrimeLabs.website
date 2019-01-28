@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import HeaderSection from '../../components/UI/WhiteLabelPage/HeaderSection'
 import WhiteLabelPageContent from '../../components/UI/WhiteLabelPage/';
 
-const PAGE_TITLE = "team custom title";
+const PAGE_TITLE = "PrimeLabs - White Label Exchange";
 
 const WhiteLabelPage = () => (
     <div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from "react-helmet";
 import CaseStudyGrid from '../components/UI/CaseStudiesPage/'
 
-const PAGE_TITLE = "our work custom title";
+const PAGE_TITLE = "PrimeLabs - Our Work";
 
 const CaseStudiesPage = () => (
     <div>

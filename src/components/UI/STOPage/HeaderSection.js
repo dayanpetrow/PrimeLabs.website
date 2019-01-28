@@ -8,10 +8,10 @@ const HeaderSection = () => (
                 Services
             </div>
             <div className="WhiteLabel__page-title">
-                Initial Token <br /> Offering
+                Security Token <br /> Offering
             </div>
             <div className="WhiteLabel__page-description">
-                Leverage the ITO Platform to raise capital and accelerate 
+                Leverage the STO Platform to raise capital and accelerate 
                 the development of your business.
             </div>
         </div>

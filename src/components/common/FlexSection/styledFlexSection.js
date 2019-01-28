@@ -4,17 +4,15 @@ export const StyledFlexSection = styled.div`
     padding: ${props => props.config.padding};
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     z-index: 3;
     margin-bottom: ${props => props.config.sectionBottomMargin}px;
     .FlexSection__left-column {
-        width: 100%;
-        max-width: ${props => props.config.leftColumnSize}px;
+        flex: 0 1 ${props => props.config.leftColumnSize}px;
     }
     .FlexSection__right-column {
-        width: 100%;
-        max-width: ${props => props.config.rightColumnSize}px;
+        flex: 0 1 ${props => props.config.rightColumnSize}px;
     }
     .FlexSection__text-wrapper {
         max-width: ${props => props.config.textSize}px;
@@ -43,10 +41,10 @@ export const StyledFlexSection = styled.div`
         }
     }
     .FlexSection__image-wrapper {
-        width: 100%;
-        text-align: center;
+        flex: 0 1 ${props => props.imageSize};
         > img {
-            max-width: ${props => props.config.imageSize}px;
+            width: 100%;
+            max-width: ${props => props.imageSize};
             margin: 0px auto;
             margin-top: ${props => props.config.imageMarginTop}px;
         }

@@ -5,7 +5,7 @@ import {
     StyledTeamText
 } from './styledTeamPageContent'
 import { SectionTitle } from '../../common/'
-import { TeamMembers } from './teamMembers'
+import { TeamMembers } from '../../../constants/teamMembers'
 import Linkedin from '../../../images/svgs/linked-in.svg'
 
 const TeamPageContent = () => (

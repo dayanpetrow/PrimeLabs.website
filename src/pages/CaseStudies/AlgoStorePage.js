@@ -14,9 +14,16 @@ import AlgoStoreScreens from '../../images/case_study_pages/AlgoStore/screens@2x
 /* backgrounds */
 import SectionBackgroundTrees from '../../images/svgs/section_background_trees.png';
 import OvalBackgroundRight from '../../images/svgs/rightOval.svg';
+import { Helmet } from "react-helmet";
+
+const PAGE_TITLE = "PrimeLabs - AlgoStore: Automated trading at Speed";
 
 const AlgoStorePage = () => (
     <React.Fragment>
+        <Helmet>
+            <title>{PAGE_TITLE}</title>
+        </Helmet>
+        
         <CaseStudyHeader data={HeaderData} />
 
         <SectionTitle 

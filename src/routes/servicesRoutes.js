@@ -1,10 +1,10 @@
 import WhiteLabelPage from '../pages/Services/WhiteLabelPage';
 import BlockchainDevPage from '../pages/Services/BlockchainDevPage';
-import IcoPage from '../pages/Services/IcoPage';
+import STOPage from '../pages/Services/STOPage';
 
 
 export default [
-    { path: "/services/white-label", page: WhiteLabelPage },
+    { path: "/services/white-label-exchange", page: WhiteLabelPage },
     { path: "/services/blockchain-development", page: BlockchainDevPage },
-    { path: "/services/initial-token-offering", page: IcoPage },
+    { path: "/services/security-token-offering", page: STOPage },
 ]

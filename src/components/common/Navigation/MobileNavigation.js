@@ -3,7 +3,6 @@ import { withRouter } from "react-router";
 import { StyledMobileNavigation } from './styledMobileNavigation';
 import PrimeLabsLogo from '../../../images/svgs/PrimeLabsLogo.svg'
 import { PrimeButton, buttonThemes } from '../../common/'
-import Icon from 'antd/lib/icon';
 
 const MobileNavigation = (props) => {
     const ServicesClickHandler = () => {
@@ -13,9 +12,12 @@ const MobileNavigation = (props) => {
             document.getElementById("MobileNavigation__services").style.height = "100%";
         }
     }
-    const getExpanded = () => {
-        return document.getElementById("MobileNavigation__services").style.height === "100%";
+    const navMenuOnClickHandler = (url) => {
+        props.history.push(url);
+        document.getElementById("MobileNavigation").style.height = "0%";
+        document.getElementById("MobileNavigation__services").style.height = "0px";
     }
+
     return (
         <StyledMobileNavigation>
             <div id="MobileNavigation" className="MobileNavigation__container">
@@ -28,24 +30,33 @@ const MobileNavigation = (props) => {
                     </div>
                 </div>
                 <div className="MobileNavigation__links">
-                    <a href="/">Home</a>
+                    <button onClick={() => navMenuOnClickHandler("/")}>Home</button>
                     <button onClick={ServicesClickHandler}>
                         Services
                     </button>
                     <div id="MobileNavigation__services" className="MobileNavigation__links__services">
-                        <a href="/services/white-label">White-label exchange</a>
-                        <a href="/services/blockchain-development">Blockchain development</a>
-                        <a href="/services/initial-token-offering">Initial token offering</a>
+                        <button onClick={() => 
+                            navMenuOnClickHandler("/services/white-label-exchange")}>
+                            White Label Exchange
+                        </button>
+                        <button onClick={() => 
+                            navMenuOnClickHandler("/services/blockchain-development")}>
+                            Blackchain Development
+                        </button>
+                        <button onClick={() => 
+                            navMenuOnClickHandler("/services/security-token-offering")}>
+                            Security Token Offering
+                        </button>
                     </div>
-                    <a href="/case-studies">Case studies</a>
-                    <a href="/news">News</a>
-                    <a href="/team">Team</a>
-                    <a href="/contacts">Contact us</a>
+                    <button onClick={() => navMenuOnClickHandler("/case-studies")}>Case studies</button>
+                    <button onClick={() => navMenuOnClickHandler("/news")}>News</button>
+                    <button onClick={() => navMenuOnClickHandler("/team")}>Team</button>
+                    <button onClick={() => navMenuOnClickHandler("/contacts")}>Contact us</button>
                 </div>
                 <div className="MobileNavigation__talk">
                     <PrimeButton 
                         theme={buttonThemes.navigationButton} 
-                        onClick={() => { props.history.push("/ready-to-talk")}}
+                        onClick={() => navMenuOnClickHandler("/ready-to-talk")}
                         width={"160px"} 
                         >
                         Ready to talk
