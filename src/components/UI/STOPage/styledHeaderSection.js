@@ -40,7 +40,6 @@ export const StyledHeader = styled.div`
         padding-top: 143px;
         @media (max-width: 1280px) {
           max-width: 960px;
-          padding-top: 110px;
         }
         .WhiteLabel__page-name {
             font-size: 18px;

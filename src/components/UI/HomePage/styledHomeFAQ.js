@@ -50,6 +50,10 @@ export const StyledHomeFaqWrapper = styled.div`
                     font-style: normal;
                     font-stretch: normal;
                     letter-spacing: 0.5px;
+                    @media (max-width: 450px) {
+                        padding: 0px;
+                        font-size: 14px;
+                    }
                 }
             }
             .ant-radio-button-wrapper:first-child {
@@ -85,6 +89,9 @@ export const StyledHomeFaqWrapper = styled.div`
                     color: white;
                     font-size: 18px;
                     font-weight: bold;
+                    @media (max-width: 700px) {
+                        left: 90%;
+                    }
                 }
             }
             .ant-collapse-content-box {

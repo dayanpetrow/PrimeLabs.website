@@ -21,6 +21,9 @@ export const StyledSectionTitleWrapper = styled.div`
         line-height: 5vw;
         position: absolute;
         bottom: 0px;
+        @media (max-width: 900px) {
+            display: none;
+        }
     }
     .SectionTitle__main-title {
         width: 100%;
@@ -33,5 +36,8 @@ export const StyledSectionTitleWrapper = styled.div`
         font-weight: bold;
         position: absolute;
         bottom: 0px;
+        @media (max-width: 960px) {
+            padding: 0px 30px;
+        }
     }
 `

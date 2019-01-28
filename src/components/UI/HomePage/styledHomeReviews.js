@@ -9,7 +9,8 @@ export const StyledHomeReviewsWrapper = styled.div`
     background-repeat: no-repeat;
     background-size: fixed;
     background-position: center bottom;
-    @media (max-width: 1280px) {        max-width: 980px;
+    @media (max-width: 1280px) {
+        max-width: 980px;
     }
     .HomeReviews__Carousel-wrapper {
         .ant-carousel .slick-slide {
@@ -90,6 +91,10 @@ export const StyledHomeReviewsWrapper = styled.div`
                         text-align: center;
                         color: #1f1f1f;
                         padding: 10px 0px;
+                        @media (max-width: 700px) {
+                            width: 80%;
+                            font-size: 14px;
+                        }
                     }
                     .Carousel__Slide-position {
                         opacity: 0.5;

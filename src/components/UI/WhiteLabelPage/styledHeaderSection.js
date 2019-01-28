@@ -26,7 +26,6 @@ const translateRightAnimation = keyframes`
 
 export const StyledHeader = styled.div`
     height: 80vh;
-    max-height: 607px;
     min-height: 480px;
     width: 100%;
     background-image: url(${HeaderCover});
@@ -41,7 +40,6 @@ export const StyledHeader = styled.div`
         padding-top: 143px;
         @media (max-width: 1280px) {
           max-width: 980px;
-          padding-top: 110px;
         }
         .WhiteLabel__page-name {
             font-size: 18px;

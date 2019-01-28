@@ -116,6 +116,9 @@ export const StyledTeamText = styled.div`
     @media (max-width: 1280px) {
         max-width: 960px;
     }
+    @media (max-width: 1280px) {
+        width: 80%;
+    }
     .TeamPage__text-wrapper {
         width: 100%;
         max-width: 1001px;

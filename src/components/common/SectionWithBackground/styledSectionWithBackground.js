@@ -16,6 +16,9 @@ export const SectionWithBackground = styled.div`
     background-repeat: no-repeat;
     background-position: ${props => props.backgroundPosition};
     padding: ${props => props.padding || "80px 0px 40px 0px"};
+    @media (max-width: 900px) {
+        padding: 20px 0px 20px 0px;
+    }
 `
 
 /* How to use:
@@ -29,11 +32,14 @@ export const RightOvalBackground = styled.div`
     position: relative;
     width: 100%;
     padding-top: 40px;
+    @media (max-width: 800px) {
+        display: none;
+    }
     .Oval {
         position: absolute;
         right: 0px;
         top: ${props => props.top || "-450px"};
-        z-index: -3;
+        z-index: -3;  
     }
 `
 

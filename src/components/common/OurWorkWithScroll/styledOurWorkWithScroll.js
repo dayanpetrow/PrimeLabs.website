@@ -9,6 +9,9 @@ export const StyledOurWorkWithScrollWrapper = styled.div`
     @media (max-width: 1280px) {
         max-width: 980px;
     }
+    @media (max-width: 800px) {
+        display: none;
+    }
     .OurWorkWithScroll {
         width: 100%;
         max-width: 1238px;

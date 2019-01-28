@@ -25,4 +25,7 @@ export const StyledButton = styled(Button)`
         background-color: ${props => props.config.hoverBackground};
         color: ${props => props.config.color || "white"};
     }
+    @media (max-width: 600px) {
+        max-width: 230px;
+    }
 `
