@@ -17,6 +17,9 @@ export const StyledContactsPageContentWrapper = styled.div`
     @media (max-width: 1280px) {
         max-width: 960px;
     }
+    .ContactsPage__button-container {
+        padding: 20px 0px;
+    }
     .ContactsPage__error-message {
         font-size: 16px;
         font-weight: normal;

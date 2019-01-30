@@ -52,6 +52,22 @@ export const StyledCaseStudyGridWrapper = styled.div`
                 @media (max-width: 500px) {
                     max-width: 90%;
                 }
+                &:hover {
+                    cursor: pointer;
+                    .CaseStudyCard__more {
+                        > a {
+                            color: #00a0df;
+                            transition: 0.4s;
+                            > span {
+                                color: color: #00a0df;
+                            }
+                        }
+                    }
+                    .CaseStudyCard__image {
+                        transform: scale(1.05);
+                        transition: 0.5s;
+                    }
+                }
                 .CaseStudyCard__image {
                     position: absolute;
                     top: 0;
@@ -65,6 +81,7 @@ export const StyledCaseStudyGridWrapper = styled.div`
                     > img {
                         max-width: 450px;
                         max-height: 254px;
+                        overflow: hidden;
                         @media (max-width: 500px) {
                             max-width: 80%;
                             margin: 0px auto;

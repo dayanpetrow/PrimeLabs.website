@@ -14,3 +14,4 @@ export { CaseStudyFullWidthParagraph } from './CaseStudyFullWidthParagraph/CSWFP
 export { default as CenteredImage } from './CaseStudyImage/CenteredImage'
 export { default as CaseStudySummary } from './CaseStudySummary/CaseStudySummary'
 export { default as MobileNavigation } from './Navigation/MobileNavigation'
+export { default as Loader } from './Loader'

@@ -5,6 +5,7 @@ import NewsPage from '../pages/NewsPage';
 import TeamPage from '../pages/TeamPage';
 import ContactsPage from '../pages/ContactsPage';
 import CaseStudiesPage from '../pages/CaseStudiesPage'
+import ReadyToTalk from '../pages/ReadyToTalkPage'
 import NotFoundPage from '../pages/NotFoundPage'
 
 /* A config object with all routes within the website */
@@ -14,6 +15,7 @@ export default [
     { path: "/news", page: NewsPage },
     { path: "/contacts", page: ContactsPage },
     { path: "/case-studies", page: CaseStudiesPage },
+    { path: "/ready-to-talk", page: ReadyToTalk },
 
     /* 
         just for separation of concerns

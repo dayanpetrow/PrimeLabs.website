@@ -11,13 +11,13 @@ const NewsPageContent = ({ news, loadMore, newsCount, disabled }) => (
                     <a href="http://google.com" target="_blank" key={index} rel="noopener noreferrer">
                         <div className="News__flex-grid__item">
                             <div className="News__flex-grid__item__title">
-                                {element.title}
+                                {element[0]}
                             </div>
                             <div className="News__flex-grid__item__summary">
-                                {element.summary}
+                                {element[1]}
                             </div>
                             <div className="News__flex-grid__item__date">
-                                {element.date}
+                                {element[2]}
                             </div>
                         </div>
                     </a>

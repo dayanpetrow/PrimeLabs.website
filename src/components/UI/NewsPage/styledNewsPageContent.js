@@ -37,6 +37,13 @@ export const StyledNewsContentWrapper = styled.div`
                 max-width: 450px;
                 padding: 30px 30px 30px 30px;
             }
+            @media (max-width: 600px) {
+                max-width: 100%;
+                padding: 30px 30px 30px 30px;
+                text-align: center;
+                margin: 0px auto;
+            }
+
             &__title {
                 font-size: 24px;
                 font-weight: normal;
@@ -85,4 +92,3 @@ export const StyledNewsContentWrapper = styled.div`
         text-align: center;
     }
 `
-

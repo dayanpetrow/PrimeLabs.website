@@ -45,7 +45,7 @@ const TeamPageContent = () => (
                         <div className="TeamGrid__item__position">
                             {member.position} 
                             <span>
-                                <a href="http://google.com">
+                                <a href={member.linkedin}>
                                     <img src={Linkedin} alt="LinkedIn Link" className="TeamGrid__item__Linkedin" />
                                 </a>
                             </span>
