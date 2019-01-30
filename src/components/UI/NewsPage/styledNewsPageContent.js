@@ -92,3 +92,19 @@ export const StyledNewsContentWrapper = styled.div`
         text-align: center;
     }
 `
+
+export const NoNews = styled.div`
+    width: 100%;
+    text-align: center;
+    padding-top: 20vh;
+    > h1 {
+        padding: 30px;
+        font-size: 48px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.44;
+        letter-spacing: 0.5px;
+        color: #8c8c8c;
+    }
+`

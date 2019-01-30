@@ -51,23 +51,23 @@ class NewsPage extends React.Component {
             .then(
                 response => {
                 const news = response.result.values;
-                //const newsCount = news.length;
-                console.log(news);
-                //console.log(newsCount);
-                //this.setState({ news, newsCount });
-                this.setState({ news  });
-        
+                news.map(element => {
+                    element[2] = new Date(element[2]);
+                    return element
+                })
+                /* sort by time */
+                news.sort((a, b) => b[2] - a[2]);
+                
                 /* set the data where it should be */
+                this.setState({ news });
                 },
                 response => {
+                    this.setState({ news: [] }); 
                     return response.result.error;
                 }
             );
         });
     };
-
-
-
      
     render() {
         const { news, newsCount } = this.state;

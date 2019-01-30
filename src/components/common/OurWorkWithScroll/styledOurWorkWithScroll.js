@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-/* d9e3f8, 3172fd */
-
 export const StyledOurWorkWithScrollWrapper = styled.div`
     width: 100%;
     max-width: 1238px;

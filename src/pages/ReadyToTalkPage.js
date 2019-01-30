@@ -13,10 +13,16 @@ class ReadyToTalkPage extends React.Component {
     componentWillMount() {
         var script = document.createElement('script'); 
         script.src = "https://paperform.co/__embed"; 
+        script.id = "ReadyToTalkScript";
         document.body.appendChild(script);
         setTimeout(() => {
             this.setState({ loading: false });
         }, 500);
+    }
+
+    componentWillUnmount() {
+        let element = document.getElementById('ReadyToTalkScript');
+        element.parentNode.removeChild(element);
     }
 
     render() {

@@ -11,6 +11,7 @@ import ContactsPageImage from '../images/svgs/contacts.svg'
 import { SectionTitle, PrimeButton, buttonThemes } from '../components/common/'
 import { message } from 'antd';
 import axios from 'axios';
+import Fade from 'react-reveal/Fade';
 
 const PAGE_TITLE = "PrimeLabs - Contact us";
 
@@ -152,73 +153,78 @@ class ContactsPage extends React.Component {
                     <title>{PAGE_TITLE}</title>
                 </Helmet>
                 <StyledContactsPageContentWrapper>
-                <SectionTitle shadowText={"Contact us"} mainText={"Tell us about your project"} />
+                <Fade bottom duration={1000}>
+                    <SectionTitle shadowText={"Contact us"} mainText={"Tell us about your project"} />
+                </Fade>
                     <div className="ContactsPage__flex">
-                        <div className="ContactsPage__flex--left-column">
-                            <img src={ContactsPageImage} alt="Contact us" />
-                        </div>
-                        <div className="ContactsPage__flex--right-column">
-
-                            <StyledInput name="name" placeholder="Full name" 
-                                className={errors.name ? "error" : ""} onChange={this.handleInputChange} />
-                            {errors.name && 
-                                <div className="ContactsPage__error-message">{errors.name}</div>
-                            }
-
-                            <StyledInput name="email" placeholder="Email"
-                                className={errors.email ? "error" : ""} onChange={this.handleInputChange} />
-                            {errors.email && 
-                                <div className="ContactsPage__error-message">{errors.email}</div>
-                            }
-
-                            <StyledInput name="company" placeholder="Company"
-                                className={errors.company ? "error" : ""} onChange={this.handleInputChange} />
-                            {errors.company && 
-                                <div className="ContactsPage__error-message">{errors.company}</div>
-                            }
-
-                            <StyledInput name="headquarters" placeholder="Headquarters country"
-                                className={errors.headquarters ? "error" : ""} onChange={this.handleInputChange} />
-                            {errors.headquarters && 
-                                <div className="ContactsPage__error-message">{errors.headquarters}</div>
-                            }
-
-                            <StyledSelect placeholder="PrimeLabs Solution" 
-                                className={errors.solution ? "error" : ""} onChange={this.handlePrimeLabsSolutionChange}>
-                                <StyledOption value="White Label">White Label Exchange</StyledOption>
-                                <StyledOption value="Blockchain">Blockchain Development</StyledOption>
-                                <StyledOption value="STO">Security Token Offering</StyledOption>
-                            </StyledSelect>
-                            {errors.solution && 
-                                <div className="ContactsPage__error-message">{errors.solution}</div>
-                            }
-
-                            <StyledSelect placeholder="Project Budget"
-                                className={errors.budget ? "error" : ""} onChange={this.handleBudgetChange}>
-                                <StyledOption value="0-5,000">0-5000</StyledOption>
-                                <StyledOption value="5,001-10,000">5001-10,000</StyledOption>
-                                <StyledOption value="10,001-20,000">10001-20,000</StyledOption>
-                            </StyledSelect>
-                            {errors.budget && 
-                                <div className="ContactsPage__error-message">{errors.budget}</div>
-                            }
-
-                            <StyledTextArea name="message" placeholder="Write your question" 
-                                className={errors.message ? "error" : ""} onChange={this.handleInputChange} />
-                            {errors.message && 
-                                <div className="ContactsPage__error-message">{errors.message}</div>
-                            }
-
-                            <div className="ContactsPage__button-container">
-                                <PrimeButton
-                                    theme={buttonThemes.blueSolid}
-                                    onClick={this.handleSubmit}
-                                    width={"175px"}
-                                >
-                                    Submit
-                                </PrimeButton>
+                        <Fade left duration={1000}>
+                            <div className="ContactsPage__flex--left-column">
+                                <img src={ContactsPageImage} alt="Contact us" />
                             </div>
-                        </div>
+                        </Fade>
+                        <Fade right duration={500} cascade>
+                            <div className="ContactsPage__flex--right-column">
+                                <StyledInput name="name" placeholder="Full name" 
+                                    className={errors.name ? "error" : ""} onChange={this.handleInputChange} />
+                                {errors.name && 
+                                    <div className="ContactsPage__error-message">{errors.name}</div>
+                                }
+
+                                <StyledInput name="email" placeholder="Email"
+                                    className={errors.email ? "error" : ""} onChange={this.handleInputChange} />
+                                {errors.email && 
+                                    <div className="ContactsPage__error-message">{errors.email}</div>
+                                }
+
+                                <StyledInput name="company" placeholder="Company"
+                                    className={errors.company ? "error" : ""} onChange={this.handleInputChange} />
+                                {errors.company && 
+                                    <div className="ContactsPage__error-message">{errors.company}</div>
+                                }
+
+                                <StyledInput name="headquarters" placeholder="Headquarters country"
+                                    className={errors.headquarters ? "error" : ""} onChange={this.handleInputChange} />
+                                {errors.headquarters && 
+                                    <div className="ContactsPage__error-message">{errors.headquarters}</div>
+                                }
+
+                                <StyledSelect placeholder="PrimeLabs Solution" 
+                                    className={errors.solution ? "error" : ""} onChange={this.handlePrimeLabsSolutionChange}>
+                                    <StyledOption value="White Label">White Label Exchange</StyledOption>
+                                    <StyledOption value="Blockchain">Blockchain Development</StyledOption>
+                                    <StyledOption value="STO">Security Token Offering</StyledOption>
+                                </StyledSelect>
+                                {errors.solution && 
+                                    <div className="ContactsPage__error-message">{errors.solution}</div>
+                                }
+
+                                <StyledSelect placeholder="Project Budget"
+                                    className={errors.budget ? "error" : ""} onChange={this.handleBudgetChange}>
+                                    <StyledOption value="0-5,000">0-5000</StyledOption>
+                                    <StyledOption value="5,001-10,000">5001-10,000</StyledOption>
+                                    <StyledOption value="10,001-20,000">10001-20,000</StyledOption>
+                                </StyledSelect>
+                                {errors.budget && 
+                                    <div className="ContactsPage__error-message">{errors.budget}</div>
+                                }
+
+                                <StyledTextArea name="message" placeholder="Write your question" 
+                                    className={errors.message ? "error" : ""} onChange={this.handleInputChange} />
+                                {errors.message && 
+                                    <div className="ContactsPage__error-message">{errors.message}</div>
+                                }
+
+                                <div className="ContactsPage__button-container">
+                                    <PrimeButton
+                                        theme={buttonThemes.blueSolid}
+                                        onClick={this.handleSubmit}
+                                        width={"175px"}
+                                    >
+                                        Submit
+                                    </PrimeButton>
+                                </div>
+                            </div>
+                        </Fade>
                     </div>
                 </StyledContactsPageContentWrapper>
             </div>

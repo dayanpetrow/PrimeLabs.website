@@ -55,6 +55,7 @@ export const StyledContentWrapper = styled.div`
         margin: 0px auto;
         justify-content: space-evenly;
         margin-bottom: 100px;
+        padding-bottom: 50px;
         .TokenPage__benefits__item {
             max-width: 175px;
             width: 100%;

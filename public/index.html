@@ -29,40 +29,32 @@
         background-color: #fbfbfb;
       }
       @keyframes loader {
-        from {
-          transform: scale(0.2) rotate(90deg);
-          opacity: 0;
-        }
-        to {
-          transform: scale(1) rotate(0deg);
-          opacity: 1;
-        }
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
       }
       .PrimeLabs__loader {
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
       }
-      .PrimeLabs__loader > img {
-        padding-top: 10vh;
-        margin: 0px auto;
-        width: 40%;
-        max-width: 500px;
-        animation-name: loader;
-        animation-duration: 1s;
+      .loader {
+        border: 9px solid #fbfbfb; /* Light grey */
+        border-top: 9px solid #1968c1; /* Blue */
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        animation: loader 1s linear infinite;
       }
-      
-  
     </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
       <div class="PrimeLabs__loader">
-        <img src="loading-icon.svg" />
+        <div class="loader"></div>
       </div>
     </div>
     <!--

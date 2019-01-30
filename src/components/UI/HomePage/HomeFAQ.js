@@ -4,6 +4,7 @@ import { SectionTitle } from '../../common/';
 import Collapse from 'antd/lib/collapse';
 import Radio from 'antd/lib/radio';
 import { BlockchainIndustries, BlockchainPlatforms } from '../../../constants/FAQ';
+import Fade from 'react-reveal/Fade';
 
 const Panel = Collapse.Panel;
 
@@ -22,12 +23,16 @@ class HomeFAQ extends React.Component {
         const { display } = this.state;
         return(
             <StyledHomeFaqWrapper>
-            <SectionTitle mainText={"Impact of Blockchain"} shadowText={"FAQ"} />
-            <div className="HomeFAQ__text">
-                Remove friction, build trust and unlock new value across 
-                businesses and industries with the power of Blockchain. 
-                What will we solve together?
-            </div>
+            <Fade bottom>
+                <SectionTitle mainText={"Impact of Blockchain"} shadowText={"FAQ"} />
+                <div className="HomeFAQ__text">
+                    Remove friction, build trust and unlock new value across 
+                    businesses and industries with the power of Blockchain. 
+                    What will we solve together?
+                </div>
+            </Fade>
+
+            <Fade bottom cascade>
             <div className="HomeFAQ__accordion">
                 <div className="HomeFAQ__view-change-wrapper">
                     <Radio.Group 
@@ -40,6 +45,7 @@ class HomeFAQ extends React.Component {
                         <Radio.Button value="platforms">Blockchain platforms</Radio.Button>
                     </Radio.Group>
                 </div>
+                
                 {display === "industries" &&
                     <Collapse bordered={false} defaultActiveKey={['0']} accordion={true}>
                         {BlockchainIndustries.map((panel,index) => (
@@ -59,6 +65,7 @@ class HomeFAQ extends React.Component {
                     </Collapse>
                 }
             </div>
+            </Fade>
         </StyledHomeFaqWrapper>
         )
     }

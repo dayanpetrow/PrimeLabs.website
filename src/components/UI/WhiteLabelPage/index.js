@@ -8,11 +8,14 @@ import ExchangeOfficeImage from '../../../images/white_label/exchange_office_ima
 import APIsImage from '../../../images/white_label/apis.png';
 import OvalBackgroundRight from '../../../images/svgs/rightOval.svg';
 import BenefitsImage from '../../../images/svgs/tickCircleIcon.svg';
+import Fade from 'react-reveal/Fade';
 
 const WhiteLabelPageContent = () => (
     <StyledWhiteLabelPageContent>
         {/* EXCHANGE SOLUTIONS SECTION */}
-        <SectionTitle shadowText="Exchange solution" mainText="Platform Components" />
+        <Fade bottom duration={1000} delay={200}>
+            <SectionTitle shadowText="Exchange solution" mainText="Platform Components" />
+        </Fade>
         <ExchangeSolutionsSection />
 
         {/* PRIME WALLET & EXCHANGE BACK OFFICE */}
@@ -25,14 +28,23 @@ const WhiteLabelPageContent = () => (
             <ExchangeBackOfficeSection />
             <APISection />
 
-            {/* BENEFITS */}
-            <RightOvalBackground>
-                <img className="Oval" src={OvalBackgroundRight} alt="Oval Background" />
-                <SectionTitle shadowText="Additional Value" mainText="Benefits" uppercase={false} />
-                <BenefitsSection />
-            </RightOvalBackground>
-            <OurWorkWithScroll />
         </SectionWithBackground>
+
+        <Fade bottom duration={1000} delay={200}>
+            <SectionTitle shadowText="Additional Value" mainText="Benefits" uppercase={false} />
+        </Fade>
+        <BenefitsSection />
+
+        {/* BENEFITS */}
+        <RightOvalBackground>
+            <Fade right duration={1000} delay={200}>
+                <img className="Oval" src={OvalBackgroundRight} alt="Oval Background" />
+            </Fade>
+            <Fade bottom duration={1000}>
+                <OurWorkWithScroll sectionTitle={"Our portfolio"}/>
+            </Fade>
+        </RightOvalBackground>
+
     </StyledWhiteLabelPageContent>
 )
 
@@ -58,28 +70,32 @@ const APISection = () => {
         <SectionWrapper>
             <StyledFlexSection config={SectionConfig}>
                 <div className="FlexSection__left-column">
-                    <div className="FlexSection__text-wrapper">
-                        <div className="FlexSection__title">
-                            API
+                    <Fade left duration={1000} delay={200}>
+                        <div className="FlexSection__text-wrapper">
+                            <div className="FlexSection__title">
+                                API
+                            </div>
+                            <div className="FlexSection__description">
+                                APIs are the backbone of the Exchange. Web Wallet, Web Trading 
+                                Terminal and Mobile Wallets use the APIs to interface with the 
+                                exchange.
+                            </div>
+                            <div className="FlexSection__list">
+                                {SectionListContent.map((listItem, index) => (
+                                    <div className="FlexSection__list__item" key={index}>
+                                        {listItem}
+                                    </div>
+                                ))}
+                            </div>
                         </div>
-                        <div className="FlexSection__description">
-                            APIs are the backbone of the Exchange. Web Wallet, Web Trading 
-                            Terminal and Mobile Wallets use the APIs to interface with the 
-                            exchange.
-                        </div>
-                        <div className="FlexSection__list">
-                            {SectionListContent.map((listItem, index) => (
-                                <div className="FlexSection__list__item" key={index}>
-                                    {listItem}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+                    </Fade>
                 </div>
                 <div className="FlexSection__right-column">
-                    <div className="FlexSection__image-wrapper">
-                        <img src={APIsImage} alt="Prime Wallets" />
-                    </div>
+                    <Fade right duration={1000} delay={200}>
+                        <div className="FlexSection__image-wrapper">
+                            <img src={APIsImage} alt="Prime Wallets" />
+                        </div>
+                    </Fade>
                 </div>
             </StyledFlexSection>
         </SectionWrapper>
@@ -106,26 +122,30 @@ const ExchangeSolutionsSection = () => {
         <SectionWrapper>
             <StyledFlexSection config={SectionConfig}>
                 <div className="FlexSection__left-column">
-                    <div className="FlexSection__image-wrapper">
-                        <img src={ExchangeSolutions} alt="Exchange Solutions" />
-                    </div>
+                    <Fade left duration={1000} delay={200}>
+                        <div className="FlexSection__image-wrapper">
+                            <img src={ExchangeSolutions} alt="Exchange Solutions" />
+                        </div>
+                    </Fade>
                 </div>
                 <div className="FlexSection__right-column">
-                    <div className="FlexSection__text-wrapper">
-                        <div className="FlexSection__title">
-                            Web terminal
+                    <Fade right duration={1000} delay={200}>
+                        <div className="FlexSection__text-wrapper">
+                            <div className="FlexSection__title">
+                                Web terminal
+                            </div>
+                            <div className="FlexSection__description">
+                                A full-featured web application allowing users to trade on the exchange.
+                            </div>
+                            <div className="FlexSection__list">
+                                {SectionListContent.map((listItem, index) => (
+                                    <div className="FlexSection__list__item" key={index}>
+                                        {listItem}
+                                    </div>
+                                ))}
+                            </div>
                         </div>
-                        <div className="FlexSection__description">
-                            A full-featured web application allowing users to trade on the exchange.
-                        </div>
-                        <div className="FlexSection__list">
-                            {SectionListContent.map((listItem, index) => (
-                                <div className="FlexSection__list__item" key={index}>
-                                    {listItem}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+                    </Fade>
                 </div>
             </StyledFlexSection>
         </SectionWrapper>
@@ -151,27 +171,31 @@ const PrimeWalletSection = () => {
         <SectionWrapper>
             <StyledFlexSection config={SectionConfig}>
                 <div className="FlexSection__left-column">
-                    <div className="FlexSection__text-wrapper">
-                        <div className="FlexSection__title">
-                            DIGITAL WALLETS
+                    <Fade left duration={1000} delay={200}>
+                        <div className="FlexSection__text-wrapper">
+                            <div className="FlexSection__title">
+                                DIGITAL WALLETS
+                            </div>
+                            <div className="FlexSection__description">
+                                Mobile applications for iOS and Android that enable
+                                users to store and trade digital assets.
+                            </div>
+                            <div className="FlexSection__list">
+                                {SectionListContent.map((listItem, index) => (
+                                    <div className="FlexSection__list__item" key={index}>
+                                        {listItem}
+                                    </div>
+                                ))}
+                            </div>
                         </div>
-                        <div className="FlexSection__description">
-                            Mobile applications for iOS and Android that enable
-                            users to store and trade digital assets.
-                        </div>
-                        <div className="FlexSection__list">
-                            {SectionListContent.map((listItem, index) => (
-                                <div className="FlexSection__list__item" key={index}>
-                                    {listItem}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+                    </Fade>
                 </div>
                 <div className="FlexSection__right-column">
-                    <div className="FlexSection__image-wrapper">
-                        <img src={PrimeWalletImage} alt="Prime Wallets" />
-                    </div>
+                    <Fade right duration={1000} delay={200}>
+                        <div className="FlexSection__image-wrapper">
+                            <img src={PrimeWalletImage} alt="Prime Wallets" />
+                        </div>
+                    </Fade>
                 </div>
             </StyledFlexSection>
         </SectionWrapper>
@@ -201,26 +225,30 @@ const ExchangeBackOfficeSection = () => {
         <SectionWrapper>
             <StyledFlexSection config={SectionConfig}>
                 <div className="FlexSection__left-column">
-                    <div className="FlexSection__image-wrapper">
-                        <img src={ExchangeOfficeImage} alt="Exchange Solutions" />
-                    </div>
+                    <Fade left duration={1000} delay={200}>
+                        <div className="FlexSection__image-wrapper">
+                            <img src={ExchangeOfficeImage} alt="Exchange Solutions" />
+                        </div>
+                    </Fade>
                 </div>
                 <div className="FlexSection__right-column">
-                    <div className="FlexSection__text-wrapper">
-                        <div className="FlexSection__title">
-                            Back Office
+                    <Fade right duration={1000} delay={200}>
+                        <div className="FlexSection__text-wrapper">
+                            <div className="FlexSection__title">
+                                Back Office
+                            </div>
+                            <div className="FlexSection__description">
+                                Web portal for management of all exchange operations. 
+                            </div>
+                            <div className="FlexSection__list">
+                                {SectionListContent.map((listItem, index) => (
+                                    <div className="FlexSection__list__item" key={index}>
+                                        {listItem}
+                                    </div>
+                                ))}
+                            </div>
                         </div>
-                        <div className="FlexSection__description">
-                            Web portal for management of all exchange operations. 
-                        </div>
-                        <div className="FlexSection__list">
-                            {SectionListContent.map((listItem, index) => (
-                                <div className="FlexSection__list__item" key={index}>
-                                    {listItem}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+                    </Fade>
                 </div>
             </StyledFlexSection>
         </SectionWrapper>
@@ -238,16 +266,18 @@ const BenefitsSection = () => {
     return (
         <SectionWrapper paddingTop="30px">
             <div className="Benefits__flex-grid">
-                {Benefits.map((item, index) => (
-                    <div className="Benefits__flex-grid__item" key={index}>
-                        <div className="Benefits__image-wrapper">
-                            <img src={BenefitsImage} alt="Benefits" />
+                <Fade bottom duration={1000} delay={200}>
+                    {Benefits.map((item, index) => (
+                        <div className="Benefits__flex-grid__item" key={index}>
+                            <div className="Benefits__image-wrapper">
+                                <img src={BenefitsImage} alt="Benefits" />
+                            </div>
+                            <div className="Benefits__text-wrapper">
+                                {item}
+                            </div>
                         </div>
-                        <div className="Benefits__text-wrapper">
-                            {item}
-                        </div>
-                    </div>
-                ))}
+                    ))}
+                </Fade>
             </div>
         </SectionWrapper>
     )

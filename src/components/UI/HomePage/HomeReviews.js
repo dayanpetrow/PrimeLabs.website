@@ -5,6 +5,8 @@ import Carousel from 'antd/lib/carousel'
 import dayan from '../../../images/team/defaultMemberPhoto.png'
 import SlideLeftButton from '../../../images/svgs/carouselArrowLeft.svg';
 import SlideRightButton from '../../../images/svgs/carouselArrowRight.svg';
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 class HomeReviews extends React.Component {
     constructor(props) {
@@ -33,41 +35,49 @@ class HomeReviews extends React.Component {
         const { currentSlide } = this.state;
         return (
             <StyledHomeReviewsWrapper>
-                <SectionTitle mainText={"Satisfied Clients"} shadowText={"Reviews"} />
-                <div className="HomeReviews__Carousel-wrapper">
-                    <Carousel
-                        dots={false}
-                        ref={(node) => { this.carousel = node; }}
-                        afterChange={(current) => {
-                            this.setState({
-                                currentSlide: current,
-                            });
-                        }}
-                        autoplay={true}
-                        autoplaySpeed={10000}
-                        draggable={true}
-                    >
-                        {Reviews.map((review,index) => (
-                            <Review data={review} key={index} goPrevious={this.previous} goNext={this.next} />
-                        ))}
-                    </Carousel>
-                </div>
-                <div className="Carousel__dot-navigation">
-                    {Reviews.map((review, index) => {
-                        const buttonClass = 
-                            currentSlide === index
-                              ? 'Carousel__dot-navigation__item active-slide'
-                              : 'Carousel__dot-navigation__item'
-                          
-                            return (
-                                <button 
-                                    key={index} 
-                                    className={buttonClass}
-                                    onClick={() => this.goToSlide(index)}
-                                />
-                            )
-                    })}
-                </div>
+                <Zoom clear duration={1500}>
+                    <SectionTitle mainText={"Satisfied Clients"} shadowText={"Reviews"} />
+                    <div className="HomeReviews__Carousel-wrapper">
+                        <Carousel
+                            dots={false}
+                            ref={(node) => { this.carousel = node; }}
+                            afterChange={(current) => {
+                                this.setState({
+                                    currentSlide: current,
+                                });
+                            }}
+                            autoplay={true}
+                            autoplaySpeed={10000}
+                            draggable={true}
+                        >
+                            {Reviews.map((review,index) => (
+                                <Review data={review} key={index} goPrevious={this.previous} goNext={this.next} />
+                            ))}
+                        </Carousel>
+                    </div>
+                </Zoom>
+
+                    <div className="Carousel__dot-navigation">
+                        <Fade bottom delay={1000}>
+                        {Reviews.map((review, index) => {
+                            const buttonClass = 
+                                currentSlide === index
+                                ? 'Carousel__dot-navigation__item active-slide'
+                                : 'Carousel__dot-navigation__item'
+                            
+                                return (
+                                    
+                                        <button 
+                                            key={index} 
+                                            className={buttonClass}
+                                            onClick={() => this.goToSlide(index)}
+                                        />
+                                    
+                                )
+                        })}
+                        </Fade>
+                    </div>
+                
             </StyledHomeReviewsWrapper>
         )
     }

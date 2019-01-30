@@ -1,19 +1,22 @@
 import React from 'react';
 import { StyledSummaryWrapper } from './styledCaseStudySummary'
+import Fade from 'react-reveal/Fade';
 
 const CaseStudySummary = ({ summary }) => (
-    <StyledSummaryWrapper>
-        {summary.map((row,index) => (
-            <div className="SummaryRow" key={index}>
-                <div className="SummaryRow__title">
-                    {row.title}
+    <Fade bottom>
+        <StyledSummaryWrapper>
+            {summary.map((row,index) => (
+                <div className="SummaryRow" key={index}>
+                    <div className="SummaryRow__title">
+                        {row.title}
+                    </div>
+                    <div className="SummaryRow__content">
+                        {row.content}
+                    </div>
                 </div>
-                <div className="SummaryRow__content">
-                    {row.content}
-                </div>
-            </div>
-        ))}
-    </StyledSummaryWrapper>
+            ))}
+        </StyledSummaryWrapper>
+    </Fade>
 )
 
 export default CaseStudySummary;

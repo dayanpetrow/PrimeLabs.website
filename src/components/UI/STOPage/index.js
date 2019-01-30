@@ -4,10 +4,14 @@ import { SectionTitle, SectionWithBackground, OurWorkWithScroll } from '../../co
 import HowItWorksGraphic from '../../../images/ico/howItWorksGraphic.svg';
 import BenefitsImage from '../../../images/svgs/tickCircleIcon.svg';
 import SectionBackgroundTrees from '../../../images/svgs/section_background_trees.png';
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 const IcoContent = () => (
     <React.Fragment>
-        <SectionTitle shadowText={"Security token offering"} mainText={"How it works"} marginTop={"80px"} />
+        <Fade bottom duration={1000}>
+            <SectionTitle shadowText={"Security token offering"} mainText={"How it works"} marginTop={"80px"} />
+        </Fade>
         <SectionWithBackground
             background={SectionBackgroundTrees}
             backgroundPosition="center top"
@@ -15,11 +19,15 @@ const IcoContent = () => (
         >
             <StyledContentWrapper>
                 <HowItWorksSection />
-                <SectionTitle shadowText={"Security token offering"} mainText={"Benefits"} marginTop={"120px"} />
+                <Fade bottom duration={1000}>
+                    <SectionTitle shadowText={"Security token offering"} mainText={"Benefits"} marginTop={"120px"} />
+                </Fade>
                 <BenefitsSection />
             </StyledContentWrapper>
 
-            <OurWorkWithScroll />
+            <Fade bottom duration={1000}>
+                <OurWorkWithScroll sectionTitle={"Our portfolio"}/>
+            </Fade>
             
         </SectionWithBackground>
     </React.Fragment>
@@ -29,29 +37,39 @@ const HowItWorksSection = () => (
     <React.Fragment>
         <div className="TokenPage__HowItWorks--with-image">
             <div className="HowItWorks__flex-grid">
-                <div className="HowItWorks__flex-grid--left">
-                    <HowItWorksCard data={Cards[0]} align={"left"} />
-                    <HowItWorksCard data={Cards[4]} align={"left"} paddingTop={"50px"} />
-                </div>
-                <div className="HowItWorks__flex-grid--middle">
-                    <img src={HowItWorksGraphic} alt="How it works" />
-                </div>
-                <div className="HowItWorks__flex-grid--right">
-                    <HowItWorksCard data={Cards[1]} align={"right"}/>
-                    <HowItWorksCard data={Cards[2]} align={"right"} paddingTop={"50px"}/>
-                </div>
+                <Fade left duration={1000}>
+                    <div className="HowItWorks__flex-grid--left">
+                        <HowItWorksCard data={Cards[0]} align={"left"} />
+                        <HowItWorksCard data={Cards[4]} align={"left"} paddingTop={"50px"} />
+                    </div>
+                </Fade>
+                <Zoom clear duration={1000} delay={500}>
+                    <div className="HowItWorks__flex-grid--middle">
+                        <img src={HowItWorksGraphic} alt="How it works" />
+                    </div>
+                </Zoom>
+                <Fade right duration={1000}>
+                    <div className="HowItWorks__flex-grid--right">
+                        <HowItWorksCard data={Cards[1]} align={"right"}/>
+                        <HowItWorksCard data={Cards[2]} align={"right"} paddingTop={"50px"}/>
+                    </div>
+                </Fade>
             </div>
-            <div className="HowItWorks__bottom-card">
-                <HowItWorksCard data={Cards[3]} align={"center"}/>
+            <Fade bottom duration={1000}>
+                <div className="HowItWorks__bottom-card">
+                    <HowItWorksCard data={Cards[3]} align={"center"}/>
+                </div>
+            </Fade>
+        </div>
+        <Fade bottom duration={1000}>
+            <div className="TokenPage__HowItWorks--no-image">
+                <HowItWorksCard data={CardsMobile[0]} align={"center"} />
+                <HowItWorksCard data={CardsMobile[1]} align={"center"}/>
+                <HowItWorksCard data={CardsMobile[2]} align={"center"} />
+                <HowItWorksCard data={CardsMobile[3]} align={"center"}/>
+                <HowItWorksCard data={CardsMobile[4]} align={"center"} />
             </div>
-        </div>
-        <div className="TokenPage__HowItWorks--no-image">
-            <HowItWorksCard data={CardsMobile[0]} align={"center"} />
-            <HowItWorksCard data={CardsMobile[1]} align={"center"}/>
-            <HowItWorksCard data={CardsMobile[2]} align={"center"} />
-            <HowItWorksCard data={CardsMobile[3]} align={"center"}/>
-            <HowItWorksCard data={CardsMobile[4]} align={"center"} />
-        </div>
+        </Fade>
     </React.Fragment>
 )
 
@@ -160,6 +178,7 @@ const BenefitsSection = () => {
     return (
         <div style={{paddingTop: "30px" }}>
             <div className="TokenPage__benefits">
+                <Fade bottom durtion={600}>
                 {Benefits.map((item, index) => (
                     <div className="TokenPage__benefits__item" key={index}>
                         <div className="TokenPage__benefits__image-wrapper">
@@ -170,6 +189,7 @@ const BenefitsSection = () => {
                         </div>
                     </div>
                 ))}
+                </Fade>
             </div>
         </div>
     )

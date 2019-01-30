@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyledSectionTitleWrapper } from './styledSectionTitle'
+import Zoom from 'react-reveal/Zoom';
 
 /*  
 props:
@@ -20,18 +21,20 @@ export const SectionTitle = ({
     marginTop,
     marginBottom
 }) => (
-    <StyledSectionTitleWrapper 
-        uppercase={uppercase} 
-        marginTop={marginTop}
-        marginBottom={marginBottom}
-    >
-        <div className="SectionTitle__shadow-title">
-            {shadowText}
-        </div>
-        <div className="SectionTitle__main-title">
-            {mainText}
-        </div>
-    </StyledSectionTitleWrapper>
+    <Zoom clear>
+        <StyledSectionTitleWrapper 
+            uppercase={uppercase} 
+            marginTop={marginTop}
+            marginBottom={marginBottom}
+        >
+            <div className="SectionTitle__shadow-title">
+                {shadowText}
+            </div>
+            <div className="SectionTitle__main-title">
+                {mainText}
+            </div>
+        </StyledSectionTitleWrapper>
+    </Zoom>
 )
 
 export default SectionTitle;

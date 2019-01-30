@@ -12,7 +12,8 @@ export const CaseStudyFullWidthParagraph = styled.div`
     letter-spacing: 0.5px;
     color: #1f1f1f;
     @media (max-width: 1280px) {
-        padding: 0px 30px;
+        padding-left: 24px;
+        max-width: 980px;
     }
     @media (max-width: 960px) {
         width: 90%;

@@ -18,6 +18,7 @@ export const SectionWrapper = styled.div`
         align-items: center;
         justify-content: space-evenly;
         margin-bottom: 100px;
+        padding-bottom: 50px;
         .Benefits__flex-grid__item {
             max-width: 200px;
             width: 100%;

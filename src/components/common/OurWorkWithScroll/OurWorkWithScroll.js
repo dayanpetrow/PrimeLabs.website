@@ -4,11 +4,10 @@ import { StyledOurWorkWithScrollWrapper } from './styledOurWorkWithScroll';
 import CaseStudies from '../../../constants/caseStudies';
 import { SectionTitle } from '../../common/';
 import Icon from 'antd/lib/icon';
-//import ReadMoreArrow from '../../../images/svgs/readmoreArrow.svg';
 
 const OurWorkWithScroll = ({sectionTitle = "Our work"}) => (
     <StyledOurWorkWithScrollWrapper>
-        <SectionTitle shadowText={"Case studies"} mainText={sectionTitle} uppercase={false} />
+        <SectionTitle shadowText={"Case studies"} mainText={sectionTitle} uppercase={false} marginTop={"-100px"} />
         <div className="OurWorkWithScroll">
             {
                 CaseStudies.map((caseStudy, index) => {

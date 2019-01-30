@@ -36,7 +36,8 @@ export const StyledPositionWrapper = styled.div`
         min-height: 163px;
         height: 163px;
         @media (max-width: 1280px) {
-            padding-left: 30px;
+            max-width: 980px;
+            padding-left: 24px;
         }
         @media (max-width: 900px) {
             display: none;
@@ -47,6 +48,9 @@ export const StyledPositionWrapper = styled.div`
             background-color: white;
             width: calc(${props => props.titleSize ? props.titleSize : "477px"} + 227px);
             height: 165px;
+            @media (max-width: 1280px) {
+                padding-left: 0;
+            }
             > .HeaderCS__button {
                 position: absolute;
                 top: 55px;
@@ -71,6 +75,9 @@ export const StyledHeaderDescriptions = styled.div`
     width: 100%;
     max-width: 1238px;
     margin: 0px auto;
+    @media (max-width: 1280px) {
+        max-width: 980px;
+    }
     .HeaderMobile__button {
         width: 100%;
         text-align: center;
@@ -106,7 +113,7 @@ export const StyledHeaderDescriptions = styled.div`
         letter-spacing: 0.5px;
         color: #1f1f1f;
         @media (max-width: 1280px) {
-            padding: 0px 30px;
+            padding: 0px 24px;
         }
         @media (max-width: 960px) {
             padding: 30px;

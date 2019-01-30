@@ -18,13 +18,14 @@ export const StyledTeamGrid = styled.div`
     margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
+    max-width: 1100px;
     .TeamGrid__item {
         padding: 15px 0;
         margin: 40px 20px 40px 20px;
         flex: 1;
-        max-width: 335px;
-        min-width: 300px;
+        max-width: 325px;
+        min-width: 325px;
         min-height: 300px;
         max-height: 400px;
         overflow: hidden;
